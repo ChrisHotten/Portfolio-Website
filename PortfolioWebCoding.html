@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<!--=======Tells a browser to match the viewport width
+     to that of the device width====================================-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<!--============= Search engine result content ====================-->
+    <meta name="description" content="Chris Hotten portfolio Web Coding">
+    <meta name="keywords" content="HTML, CSS, Javascript, Book DJ">
+    <meta name="author" content="Chris Hotten, Christopher Hotten">
+    <title>Chris Hotten | Web Coding</title>
+
+<!--============== Stylesheet location =============================-->
+    <link href="styles.css" rel="stylesheet" />
+
+<!--=========================Font-family source links==================-->
+  	<link href="https://fonts.googleapis.com/css?family=Poppins" rel='stylesheet'>
+  	<link href="https://fonts.googleapis.com/css?family=Cabin" rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Manrope" rel='stylesheet'>
+
+<!-- Javascript is at bottom of html -->
+  </head>
+
+<!--========== ****HTML BODY STARTS****** =========================-->
+  <body>
+    <header id="logoAndNav"><!--header has id for sticky in CSS-->
+      <div class="container">
+        <div id="logo">
+          <a href="index.html">
+            <img src="Images/CHLogoLetteringBlackSwishRed.png"
+              alt="Chris Hotten Logo"/>
+          </a>
+          <a href="mailto:chrishotten@gmail.com" class="rightOfLogo">
+            <img src="Images/IconEmail4RedCircle250X250.png" alt="Email symbol"/>
+          </a>
+          <a href="https://www.linkedin.com/in/christopher-hotten-ba44831a9" target="blank" class="rightOfLogo">
+            <img src="Images/IconLinkedin3RedBackgroundCircleA.png" alt="LinkedIn icon"/>
+          </a>
+        </div>
+      </div>
+      <nav id="navigationBar">
+        <div class="container">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li>|</li>
+            <li><a href="PortfolioSpreadsheets.html">SPREADSHEETS</a></li>
+            <li>|</li>
+            <li><a href="PortfolioDatabases.html">DATABASES</a></li>
+            <li>|</li>
+            <li><a href="PortfolioWebCoding.html" class="active">WEB CODING</a></li>
+            <li>|</li>
+            <li><a href="PortfolioTutorials.html">TUTORIALS</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- Sperate nav section for links for mobile/tablet screens -->
+    <!-- ensures no conflicts occur with larger size screen links -->
+    <!-- all styling for this nav is in CSS media queries -->
+      <nav id="mobileMenu">
+        <div id="mobileTabletBurgerMenu">
+          <a href="index.html">
+            <img src="Images/ChrisHottenLogo2WhiteNoSwish3.png"
+              alt="Chris Hotten Logo" id="mobileLogo"/>
+          </a>
+          <a href="#"> <!-- href left blank as used in javascript -->
+            <img src="Images/HamburgerMenuWhite.png"
+              alt="Mobile menu button" id="hamburgerMenuIcon"/>
+          </a>
+        </div>
+        <div id="mobileMenuLinks">
+          <ul>
+            <li><a href="index.html" id="indexTopBorder">HOME</a></li>
+            <!-- id created so white line appears seperates
+              border across top of mobile view and the 'Home' link -->
+            <li><a href="PortfolioSpreadsheets.html">SPREADSHEETS</a></li>
+            <li><a href="PortfolioDatabases.html">DATABASES</a></li>
+            <li><a href="PortfolioWebCoding.html">WEB CODING</a></li>
+            <li><a href="PortfolioTutorials.html">TUTORIALS</a></li>
+            <li><a href="mailto:chrishotten@gmail.com">Email Me</a></li>
+            <li><a href="https://www.linkedin.com/in/christopher-hotten-ba44831a9">LinkedIn Profile</a></li>
+          </ul>
+        </div>
+      <nav>
+    </header>
+
+<!--=============== Description of portfolio site ===================-->
+    <section id="webCodingAssDesc">
+      <div class="container">
+        <div class="assDescription">
+          <div>
+          <img src="Images/ParagraphAvatarPhoto4.png"
+            alt="Photo of Chris Hotten" class="openingParagraphsAvatar">
+          <p>
+            The site you are looking at right now was coded by me. No part of it
+            has been created using template site builders such as Wix or Wordpress,
+            which has meant that the project has taken longer, but also been very
+            satisfying to work on. From the outset I decided that the site must
+            be designed responsively, so that whatever device you are viewing
+            this page on (phone, tablet or desktop/laptop), the page will
+            automatically adapt to the screen size to make the content readable
+            and fit correctly.
+          </p>
+          </div>
+          <div>
+          <img src="Images/ParagraphWebCodingIcon3Circle.png"
+            alt="Web Coding icon" class="openingParagraphsIcon">
+          <p>
+            Creating responsive webpages has been a large learning experience
+            for me. For what I wanted this website to be, it has meant that
+            I needed to learn and practice in my own spare time. This does not
+            just relate to the coding itself, but other areas as well. For the
+            photos and images you see on this site, I have used to learn editing
+            programs in much greater detail than on previous projects, as
+            well as how to plan websites that will be viewed on different
+            screens.
+            <br class="mobileParagraphBreaks"> <!-- seperates parapgraphs
+              only in mobile view, in 'Styling used across multiple pages'
+              section of CSS MEDIA QUERIES -->
+            <br class="mobileParagraphBreaks">
+            This process has not always been easy, but it has given me
+            the opportunity to gain new skills, which is what I enjoy the most.
+          </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--======= Showing how website looks on different device types =============-->
+    <section id="webCodingDisplays">
+      <div class="container">
+        <div id="boxForScreenDisplayAndText1">
+          <img src="Images/MobilePhoneFilledGreyCroppedWithRealScreenshot.png"
+            alt="Showing how website is displayed on a mobile screen" />
+        </div>
+        <div id="boxForScreenDisplayAndText1">
+          <img src="Images/TabletFilledGrey512X512WithRealScreenshot.png"
+            alt="Showing how website is displayed on a tablet screen" />
+        </div>
+        <div id="boxForScreenDisplayAndText2">
+          <img src="Images/MonitorFilledGreyCroppedWithRealScreenshot.png"
+            alt="Showing how website is displayed on a monitor" />
+        </div>
+      </div>
+    </section>
+
+<!--=============== Downloads for portfolio website ===========================-->
+    <section id="portfolioWebsiteDownloads">
+      <div class="container">
+        <div class="downloadsSection">
+        <!-- All styling within downloadsSection div is done
+          in 'Styling used across multiple pages' section of CSS -->
+          <h2>&#8659; Downloads &#8659;</h2>
+          <table>
+            <tr class="downloadsTableHeading">
+              <!--tr given id so that can be styled seperate from data rows-->
+              <th class="downloadsTableFileType">File Type</th>
+              <!-- th given class so can be hidden in mobile view,
+                styling only visible in Media Queries-->
+              <th>Information</th>
+              <th class="downloadsTableDownloadWord">Download</th>
+              <!-- th given class so can be hidden in mobile view,
+                styling only visible in Media Queries-->
+              <th class="downloadsTableDownloadSymbol">&#8659;</th>
+              <!-- th given class so can be hidden on larger screens -->
+            </tr>
+            <tr>
+              <td class="downloadsTableFileType">Link</td>
+              <!-- td given class so can be hidden in mobile view -->
+              <td>GitHub repository of files used in the creation of this site</td>
+              <td class="downloadArrow">
+                <a href="https://github.com/ChrisHotten/Portfolio-Website" target="_blank">
+                &#8659;</a></td>
+            </tr>
+          </table>
+          <hr class="sectionLineBreaks"> <!--large line running across the length
+          of the container, styled 'Styling used across multiple pages'
+          section of CSS-->
+        </div>
+      </div>
+    </section>
+
+<!--============= Description of web coding 'Book DJ' assignment ============-->
+    <section id="webCodingBookDJAssDesc">
+      <div class="container">
+        <div class="assDescription">
+          <div>
+          <img src="Images/ParagraphAvatarPhoto5.png"
+            alt="Photo of Chris Hotten" class="openingParagraphsAvatar">
+          <p>
+            Having the opportunity to work on web coding for the first time
+            within a formal qualification was a major step-up in experience
+            for me. I had previously carried out coding, but the requirements of
+            the project for my <i>One Awards Computing Diploma</i> represented
+            a larger learning curve than I had encountered previously. This also meant
+            though that I would have the chance to learn a lot of new skills
+            and learn how to use new programs, which are two areas that I
+            have always hugely enjoyed.
+            <br class="mobileParagraphBreaks"> <!-- seperates parapgraphs
+              only in mobile view, in 'Styling used across multiple pages'
+              section of CSS MEDIA QUERIES -->
+            <br class="mobileParagraphBreaks">
+            The first part of the brief was to create a website for a fictional
+            company of my choosing.
+          </p>
+          </div>
+          <div>
+          <img src="Images/ParagraphWebCodingIconBookDJ2Circle.png"
+            alt="Web Coding icon" class="openingParagraphsIcon">
+          <p>
+            I decided that the website would be created for a fictional talent
+            agency representing DJ’s called 'Book DJ'. The website needed to be
+            made up of multiple pages, with evidence that showed a
+            clear understanding of how to plan, design and develop a working
+            website as well as how carry out the process of coding. The pages
+            were required to make use of various aspects of HTML, CSS and
+            JavaScript code, so that the site looked and acted like a
+            professional site as closely as possible.
+            <br class="mobileParagraphBreaks">
+            <br class="mobileParagraphBreaks">
+            This meant that the site would need to be interactive, contain links,
+            feature good navigation and much more:
+          </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--=============== List of items used in web coding assignment ==========-->
+    <section id="webCodingItemsLists">
+      <div class="container">
+        <div id="webCodingFeaturesList1">
+          <img src="Images/WebCodingListMobileLogosHTMLCircle2.png" alt="HTML 5 logo image"
+            class="mobileDisplayWCListPicture">
+          <h3>--- HTML / Features ---</h3>
+          <ul>
+            <li>Active page navigation</li>
+            <li>All images given alt text to assist with readability</li>
+            <li>Appropriate meta tags</li>
+            <li>Code is commented throughout</li>
+            <li>Consideration given for accessibility</li>
+            <li>Contrast between foreground and background</li>
+            <li>Correct folder structure</li>
+            <li>Correct use of divs within divs</li>
+            <li>Correctly nested tags</li>
+            <li>Easy navigation</li>
+            <li>Function correctly in different browsers</li>
+            <li>Good navigation techniques</li>
+            <li>Good use of whitespace</li>
+            <li>Hero images</li>
+            <li>Hyperlinks using both text and graphics</li>
+            <li>Implement multiple lists</li>
+            <li>Include a Twitter widget</li>
+            <li>Include interactive buttons</li>
+            <li>Include interactive forms</li>
+            <li>Indented code</li>
+            <li>Internal and external hyperlinks</li>
+            <li>Judicious use of menu items</li>
+            <li>Labelled drop-down menus with multiple options</li>
+            <li>Legacy support for older versions of browsers</li>
+            <li>No broken links</li>
+            <li>No inline styling</li>
+            <li>Use of a sans-serif font</li>
+            <li>Use of CSS across all pages</li>
+            <li>Use of industry standard techniques</li>
+            <li>Use of Google Fonts</li>
+            <li>Use of HTML symbols</li>
+            <li>Use of images (JPEG and PNG)</li>
+            <li>Use of SVG lines</li>
+          </ul>
+        </div>
+        <div id="webCodingFeaturesList2">
+          <img src="Images/WebCodingListMobileLogosJSCircle.png" alt="JavaScript 3 logo image"
+            class="mobileDisplayWCListPicture">
+          <h3>--- JavaScript ---</h3>
+          <ul>
+            <li>Create alerts</li>
+            <li>Changing images on a loop</li>
+            <li>Display results of form inputs</li>
+            <li>JS used in HTML and separate sheet</li>
+            <li>Show messages upon submission of forms</li>
+            <li>Use of the DOM</li>
+            <li>Use of ‘If Else’ statements</li>
+          </ul>
+          <img src="Images/WebCodingListMobileLogosCSS3Circle2.png" alt="CSS 3 logo image"
+            class="mobileDisplayWCListPicture">
+          <h3>--- CSS ---</h3>
+          <ul>
+            <li>Appropriate use of the CSS box model</li>
+            <li>Background images</li>
+            <li>Classes and id’s given appropriate names</li>
+            <li>Classes and id’s in logical order</li>
+            <li>Curved borders</li>
+            <li>Different styling of borders</li>
+            <li>Floats</li>
+            <li>Hover selectors</li>
+            <li>Set and auto heights</li>
+            <li>Sticky navigation</li>
+            <li>Styled buttons</li>
+            <li>Styled forms</li>
+            <li>Styled links</li>
+            <li>Text decoration</li>
+            <li>Text is aligned through CSS</li>
+            <li>Timed transitions</li>
+            <li>Use of font weights</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+<!--==== Info about planning, preparation, reports and live builds ==========-->
+<!--=============== Contains links to PDF's and HTML pages ==========-->
+
+    <section id="webCodingPresentations">
+      <div class="container">
+        <div class="presentationsAndReportsSection">
+          <!-- All styling within presentationsAndReportsSection div
+            is done in 'Styling used across multiple pages' section of CSS -->
+          <h2>Documentation</h2>
+          <p>
+            Before any code can be typed, the planning process needs to be
+            completed. I needed to produce several items that would demonstrate
+            that I understood how to prepare creating a website. A sitemap details
+            what pages are to be created and how they will link together
+            (including links to other sites). A wireframe model was created for
+            every webpage, which shows how the page will be interactive, and what
+            it is expected to contain. Finally, a ‘moodboard’ was created, which
+            displays the colour scheme the site will use, logos, and examples
+            of images likely to be used.
+          </p>
+
+          <!--presentationBox div used for displaying images and links-->
+          <div class="presentationBox">
+            <!-- Presentation Boxes are styled near top of CSS
+              in multiple elements section -->
+            <h3>Book DJ Planning</h3>
+            <!-- Presentation Box images are styled in individual page sections
+              of CSS -->
+              <img src="Images/PresentationWebCodingPlanning1.jpg"
+                alt="Screenshot of web site map" class="presentationBoxImageLandscape"/>
+                <!-- images given presentationBoxImageLandscape class so that
+                  can be styled seperately to images in portrait orientation -->
+              <img src="Images/PresentationWebCodingPlanning2.jpg"
+                alt="Screenshot of web site wire frame" class="presentationBoxImageLandscape"/>
+              <img src="Images/PresentationWebCodingPlanning3.jpg"
+                alt="Screenshot of web site mood board" class="presentationBoxImageLandscape"
+                  id="hiddenImage1"/>
+                  <!-- hiddenImage id used for hiding images in smaller
+                    viewports, only styled in Media Queries -->
+              <img src="Images/PresentationWebCodingPlanning4.jpg"
+                alt="Screenshot of web site wire frame" class="presentationBoxImageLandscape"
+                  id="hiddenImage2"/>
+                  <br>
+              <a href="Downloads/WebCoding/BookDJ/SitemapWireframesMoodboard.pdf">
+                Open as PDF</a>
+          </div>
+          <br>
+          <p>
+            The next stage is to produce colour mock-ups of how each page is
+            expected to look. The assignment only asked for two pages initially,
+            but I thought it best to create an example for each page, as this
+            would help greatly when it came to the coding process.
+          </p>
+
+          <div class="presentationBox">
+            <!-- Presentation Boxes are styled near top of CSS
+              in multiple elements section -->
+            <h3>Book DJ Preparation</h3>
+            <!-- Presentation Box images are styled in individual page sections
+              of CSS -->
+              <img src="Images/PresentationWebCodingPreparation1.jpg"
+                alt="Screenshot of web site example page" class="presentationBoxImageLandscape"/>
+                <!-- images given presentationBoxImageLandscape class so that
+                  can be styled seperately to images in portrait orientation -->
+              <img src="Images/PresentationWebCodingPreparation2.jpg"
+                alt="Screenshot of web site example page" class="presentationBoxImageLandscape"/>
+              <img src="Images/PresentationWebCodingPreparation3.jpg"
+                alt="Screenshot of web site example page" class="presentationBoxImageLandscape"
+                  id="hiddenImage1"/>
+                  <!-- hiddenImage id used for hiding images in smaller
+                    viewports, only styled in Media Queries -->
+              <img src="Images/PresentationWebCodingPreparation4.jpg"
+                alt="Screenshot of web site example page" class="presentationBoxImageLandscape"
+                  id="hiddenImage2"/>
+                  <br>
+              <a href="Downloads/WebCoding/BookDJ/WebpageExamples.pdf">
+                Open as PDF</a>
+          </div>
+          <br>
+          <p>
+            After the website was completed, I produced a comprehensive 56-page
+            report, which detailed the whole process from start to finish. The
+            document used a number of references to illustrate common
+            elements for webpage code, as well as expected good practices for
+            the coding itself. The document also contains structured examples of
+            good usability for a website visitor and how I implemented this. The
+            report uses captioned images throughout from my own examples, and is
+            finished off with a guide on publishing a website to the internet.
+          </p>
+          <div class="presentationBox">
+            <!-- Presentation Boxes are styled near top of CSS
+              in multiple elements section -->
+            <h3>Web Report</h3>
+            <img src="Images/ReportWebCoding1.jpg"
+              alt="Screenshot of Functions Guide" class="presentationBoxImagePortrait"/>
+              <!-- images given presentationBoxImagePortrait class so that
+                can be styled seperately to images in landscape orientation -->
+            <img src="Images/ReportWebCoding2.jpg"
+              alt="Screenshot of Functions Guide" class="presentationBoxImagePortrait"/>
+            <img src="Images/ReportWebCoding3.jpg"
+              alt="Screenshot of Functions Guide" class="presentationBoxImagePortrait"
+                id="hiddenImage1"/>
+                <!-- hiddenImage id used for hiding images in smaller
+                  viewports, only styled in Media Queries -->
+            <img src="Images/ReportWebCoding4.jpg"
+              alt="Screenshot of Functions Guide" class="presentationBoxImagePortrait"
+                id="hiddenImage2"/>
+            <img src="Images/ReportWebCoding5.jpg"
+              alt="Screenshot of Functions Guide" class="presentationBoxImagePortrait"
+                id="hiddenImage3"/>
+            <br>
+            <a href="Downloads/WebCoding/BookDJ/WebPageDesignReport.pdf">
+              Open as PDF</a>
+          </div>
+          <br>
+          <h2>Links</h2>
+          <p>
+            Please click on a link below that most closely matches your monitor
+            resolution (links will open in a new tab). The site was not designed
+            to be responsive but it was created with two different resolutions
+            in mind. If your display resolution is less than 1920 by 1080
+            (known as 1080P), then please select 1366 X 768 to
+            view the site as it is more likely to display as intended (site may
+            display incorrectly on phones and tablets as it was designed for
+            laptop/desktop first)
+          </p>
+          <div id="bookDJWebpagesLinks">
+            <img src="Images/BookDJRedMonitorCropped.png"
+              alt="Desktop monitor showing screenshot of Book DJ site"/>
+            <br>
+            <div id="bookDJResolutionSelect">
+              <div id="bookDJResolutionSelectLeft">
+                <a href="CollegeBookDJWebsite/Version 1_0/1366 X 768 Resolution/index.html"
+                  target="_blank">1366 X 768</a>
+              </div>
+              <div id="bookDJResolutionSelectCentre">
+              <p>|</p>
+              </div>
+              <div id="bookDJResolutionSelectRight">
+                <a href="CollegeBookDJWebsite/Version 1_1/1920 X 1080 Resolution/index.html"
+                  target="_blank">1920 X 1080</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--=============== Downloads for 'Book DJ'' website ===========================-->
+    <section id="bookDJDownloads">
+      <div class="container">
+        <div class="downloadsSection">
+        <!-- All styling within downloadsSection div is done
+          in 'Styling used across multiple pages' section of CSS -->
+          <h2>&#8659; Downloads &#8659;</h2>
+          <table>
+            <tr class="downloadsTableHeading">
+              <!--tr given id so that can be styled seperate from data rows-->
+              <th class="downloadsTableFileType">File Type</th>
+              <!-- th given class so can be hidden in mobile view,
+                styling only visible in Media Queries-->
+              <th>Information</th>
+              <th class="downloadsTableDownloadWord">Download</th>
+              <!-- th given class so can be hidden in mobile view,
+                styling only visible in Media Queries-->
+              <th class="downloadsTableDownloadSymbol">&#8659;</th>
+              <!-- th given class so can be hidden on larger screens -->
+            </tr>
+            <tr>
+              <td class="downloadsTableFileType">Link</td>
+              <!-- td given class so can be hidden in mobile view -->
+              <td>GitHub repository of files used for the Book DJ website (1366 X 768 resolution)</td>
+              <td class="downloadArrow">
+                <a href="https://github.com/ChrisHotten/BookDJ-Website-1366X768-Resolution" target="_blank">
+                &#8659;</a></td>
+            </tr>
+            <tr>
+              <td class="downloadsTableFileType">Link</td>
+              <!-- td given class so can be hidden in mobile view -->
+              <td>GitHub repository of files used for the Book DJ website (1920 X 1080 resolution)</td>
+              <td class="downloadArrow">
+                <a href="https://github.com/ChrisHotten/BookDJ-Website-1920X1080-Resolution" target="_blank">
+                &#8659;</a></td>
+            </tr>
+          </table>
+          <hr class="sectionLineBreaks"> <!--large line running across the length
+          of the container, styled 'Styling used across multiple pages'
+          section of CSS-->
+        </div>
+      </div>
+    </section>
+
+<!--============= Contains table of web coding YouTube tutorials ==========-->
+    <section id="webCodingPageTutorials">
+      <div class="container">
+        <div class="tutorialsSection">
+            <!-- All styling within tutorialsSection div is done
+              in 'Styling used across multiple pages' section of CSS -->
+          <h2>&#9654; Tutorials &#9654;</h2>
+          <p>
+            Listed below are all my self-produced tutorials relating
+            specifically to the creation of web pages
+          </p>
+          <p>A full list of my
+            tutorials for all subjects can be found
+              <a href="PortfolioTutorials.html">here</a>
+          </p>
+          <p>My YouTube channel can be found
+              <a href="https://www.youtube.com/channel/UCrTjBb8jy31tXihpLwltIVg">here</a>
+          </p>
+          <p id="tutorialsSectionDesktopOnlyText">
+            <!-- id created as this text only needs to appear in desktop view,
+              styled in Media Queries -->
+            <i>&#42;To open links in a new tab, hold
+            down the Ctrl key and click on the link&#42;</i>
+          </p>
+
+          <table>
+            <tr class="tutorialsTableHeading">
+              <th class="tutorialsTableNumberColumn">No.</th>
+              <!-- th given class so can be hidden in mobile view,
+                styling only visible in Media Queries-->
+              <th>Description</th>
+              <th>Link</th>
+            </tr>
+            <tr>
+              <td class="tutorialsTableNumberColumn">1</td>
+              <!-- td given class so can be hidden in mobile view,
+                styling only visible in Media Queries-->
+              <td>Awaiting upload</td>
+              <td class="playArrow"><a href="#">
+                &#9654;</a></td>
+            </tr>
+            <tr>
+              <td class="tutorialsTableNumberColumn">2</td>
+              <td>Awaiting upload</td>
+              <td class="playArrow"><a href="#">
+                &#9654;</a></td>
+            </tr>
+            <tr>
+              <td class="tutorialsTableNumberColumn">3</td>
+              <td>Awaiting upload</td>
+              <td class="playArrow"><a href="#">
+                &#9654;</a></td>
+            </tr>
+            <tr>
+              <td class="tutorialsTableNumberColumn">4</td>
+              <td>Complete playlist</td>
+              <td class="playArrow"><a href="#">
+                &#9654;</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+<!--========================= Footer ======================================-->
+    <footer>
+      <div class="container">
+        <p>Email:</p>
+        <a href="mailto:chrishotten@gmail.com">chrishotten@gmail.com</a>
+
+        <!--****Site links***-->
+        <p class="footerTitles">Site Links:</p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="PortfolioSpreadsheets.html">Spreadsheets</a></li>
+          <li><a href="PortfolioDatabases.html">Databases</a></li>
+          <li><a href="PortfolioWebCoding.html">Web Coding</a></li>
+          <li><a href="PortfolioTutorials.html">Tutorials</a></li>
+          <li><a href="PortfolioSitemap.html">Site Map</a></li>
+        </ul>
+
+        <!--****Social/Video media links***-->
+        <p class="footerTitles">Media & Social:</p>
+        <a href="https://www.youtube.com/channel/UCrTjBb8jy31tXihpLwltIVg" target="blank">
+          <img src="Images/IconYouTubeWhite.png" alt="White YouTube icon"/>
+        </a>
+        <a href="https://www.linkedin.com/in/christopher-hotten-ba44831a9" target="blank">
+          <img src="Images/IconLinkedInWhite150X150.png" alt="White LinkedIn icon"/>
+        </a>
+        <br>
+        <p>Copyright &copy; Chris Hotten 2020</p>
+      </div>
+    </footer>
+
+<!--========javascript and  javascript sheet location==================-->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="javascript.js"></script>
+
+  </body>
+</html>

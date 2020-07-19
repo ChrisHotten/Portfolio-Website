@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<!--=======Tells a browser to match the viewport width
+     to that of the device width====================================-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<!--============= Search engine result content ====================-->
+    <meta name="description" content="Chris Hotten Databases portfolio">
+    <meta name="keywords" content="Databases, Relational Database tutorials, Access">
+    <meta name="author" content="Chris Hotten, Christopher Hotten">
+    <title>Chris Hotten | Databases</title>
+
+<!--============== Stylesheet location =============================-->
+    <link href="styles.css" rel="stylesheet" />
+
+<!--=========================Font-family source links==================-->
+  	<link href="https://fonts.googleapis.com/css?family=Poppins" rel='stylesheet'>
+  	<link href="https://fonts.googleapis.com/css?family=Cabin" rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Manrope" rel='stylesheet'>
+
+<!-- Javascript is at bottom of html -->
+  </head>
+
+<!--========== ****HTML BODY STARTS****** =========================-->
+  <body>
+    <header id="logoAndNav"><!--header has id for sticky in CSS-->
+      <div class="container">
+        <div id="logo">
+          <a href="index.html">
+            <img src="Images/CHLogoLetteringBlackSwishRed.png"
+              alt="Chris Hotten Logo"/>
+          </a>
+          <a href="mailto:chrishotten@gmail.com" class="rightOfLogo">
+            <img src="Images/IconEmail4RedCircle250X250.png" alt="Email symbol"/>
+          </a>
+          <a href="https://www.linkedin.com/in/christopher-hotten-ba44831a9" target="blank" class="rightOfLogo">
+            <img src="Images/IconLinkedin3RedBackgroundCircleA.png" alt="LinkedIn icon"/>
+          </a>
+        </div>
+      </div>
+      <nav id="navigationBar">
+        <div class="container">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li>|</li>
+            <li><a href="PortfolioSpreadsheets.html">SPREADSHEETS</a></li>
+            <li>|</li>
+            <li><a href="PortfolioDatabases.html" class="active">DATABASES</a></li>
+            <li>|</li>
+            <li><a href="PortfolioWebCoding.html">WEB CODING</a></li>
+            <li>|</li>
+            <li><a href="PortfolioTutorials.html">TUTORIALS</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- Sperate nav section for links for mobile/tablet screens -->
+    <!-- ensures no conflicts occur with larger size screen links -->
+    <!-- all styling for this nav is in CSS media queries -->
+      <nav id="mobileMenu">
+        <div id="mobileTabletBurgerMenu">
+          <a href="index.html">
+            <img src="Images/ChrisHottenLogo2WhiteNoSwish3.png"
+              alt="Chris Hotten Logo" id="mobileLogo"/>
+          </a>
+          <a href="#"> <!-- href left blank as used in javascript -->
+            <img src="Images/HamburgerMenuWhite.png"
+              alt="Mobile menu button" id="hamburgerMenuIcon"/>
+          </a>
+        </div>
+        <div id="mobileMenuLinks">
+          <ul>
+            <li><a href="index.html" id="indexTopBorder">HOME</a></li>
+            <!-- id created so white line appears seperates
+              border across top of mobile view and the 'Home' link -->
+            <li><a href="PortfolioSpreadsheets.html">SPREADSHEETS</a></li>
+            <li><a href="PortfolioDatabases.html">DATABASES</a></li>
+            <li><a href="PortfolioWebCoding.html">WEB CODING</a></li>
+            <li><a href="PortfolioTutorials.html">TUTORIALS</a></li>
+            <li><a href="mailto:chrishotten@gmail.com">Email Me</a></li>
+            <li><a href="https://www.linkedin.com/in/christopher-hotten-ba44831a9">LinkedIn Profile</a></li>
+          </ul>
+        </div>
+      <nav>
+    </header>
+
+<!--=============== Description of database assignment ===================-->
+    <section id="databaseAssDesc">
+      <div class="container">
+        <div class="assDescription">
+          <div>
+            <img src="Images/ParagraphAvatarPhoto3.png"
+              alt="Photo of Chris Hotten" class="openingParagraphsAvatar">
+            <p>
+              On my homepage I state that I relish databases - to be more precise,
+              <i>relational databases</i>. As the name implies, relational databases don’t
+              just deal with information contained in tables, but the relationships
+              between those tables. This makes them more complex than non-relational
+              (or ‘flat-file’) databases, but can also be very rewarding to create
+              and work on.
+              <br class="mobileParagraphBreaks"> <!-- seperates parapgraphs
+                only in mobile view, in 'Styling used across multiple pages'
+                section of CSS MEDIA QUERIES -->
+              <br class="mobileParagraphBreaks">
+              In order to really understand relational databases, I
+              produced a project for my <i>One Awards Computing Diploma,</i> which would
+              act as a demonstration of my understanding of the many different
+              concepts behind creating an excellent relational database.
+            </p>
+          </div>
+          <div>
+            <img src="Images/ParagraphAccessIcon1Circle.png"
+              alt="Database icon" class="openingParagraphsIcon">
+            <p>
+              The aim of the project was to create a relational database that would
+              be used by a film rental chain with physical stores. It would contain
+              obvious components such as records for each of the films and customers,
+              but would also need to contain records for all the staff, their pay,
+              ID badges etc.
+              <br class="mobileParagraphBreaks">
+              <br class="mobileParagraphBreaks">
+              I took this opportunity to go above and beyond the brief,
+              adding and editing my own pictures in order to make the database appear
+              more professional. Importantly, it would need to allow users to view,
+              search and input data, and show evidence that a number of features had
+              been implemented:
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--=============== List of items used in database assignment ==========-->
+
+    <section id="databaseItemsLists">
+      <div class="container">
+        <div id="databaseFeaturesList">
+          <h3>--- Features ---</h3>
+          <ul>
+            <li>Break down data into Atomic data for use in Normalisation Forms</li>
+            <li>--------</li>
+            <li>Data Dictionary</li>
+            <li>--------</li>
+            <li>Data types suited to different fields</li>
+            <li>--------</li>
+            <li>Different degrees of Cardinality:</li>
+              <ul>
+                <li class="databaseSubList">One-to-One (1:1)</li>
+                <li class="databaseSubList">One-to-Many (1:M)</li>
+                <li class="databaseSubList">Many-to-Many (M:N)</li>
+              </ul>
+              <li>--------</li>
+            <li>Different entity types containing relevant attributes</li>
+            <li>--------</li>
+            <li>Entity Relationship diagram</li>
+            <li>--------</li>
+            <li>Evidence of data being imported from/exported to external files</li>
+            <li>--------</li>
+            <li>Full layout of the database validations</li>
+            <li>--------</li>
+            <li>Fully functional navigation system</li>
+            <li>--------</li>
+            <li>Foreign Keys</li>
+            <li>--------</li>
+            <li>Logical field lengths</li>
+            <li>--------</li>
+            <li>Multiple fields stored in multiple records</li>
+            <li>--------</li>
+            <li>Multiple Input Masks and Validation Rules</li>
+            <li>--------</li>
+            <li>Multiple records stored in multiple tables</li>
+            <li>--------</li>
+            <li>Multiple tables with relationships to each other</li>
+            <li>--------</li>
+            <li>No compromises in referential integrity</li>
+            <li>--------</li>
+            <li>Practical front-end allowing users to:</li>
+              <ul>
+                <li class="databaseSubList">Search for items within the database</li>
+                <li class="databaseSubList">Print off and search results</li>
+                <li class="databaseSubList">Input data while ensuring validity of data is maintained</li>
+              </ul>
+              <li>--------</li>
+            <li>Primary Keys</li>
+            <li>--------</li>
+            <li>Queries performed using multiple tables and logical complex criteria</li>
+            <li>--------</li>
+            <li>Relationship optionalities:</li>
+             <ul>
+                <li class="databaseSubList">Mandatory</li>
+                <li class="databaseSubList">Optional</li>
+                <li class="databaseSubList">Mixed</li>
+              </ul>
+              <li>--------</li>
+            <li>Relationships between entities</li>
+            <li>--------</li>
+            <li>Schema showing the data has been normalised to:</li>
+              <ul>
+                <li class="databaseSubList">Flat-file (0NF)</li>
+                <li class="databaseSubList">1st Form (1NF)</li>
+                <li class="databaseSubList">2nd Form (2NF)</li>
+                <li class="databaseSubList">3rd Form (3NF)</li>
+              </ul>
+              <li>--------</li>
+            <li>Test plan created to run and check all functions and stability</li>
+            <li>--------</li>
+            <li>User and password login using Visual Basic code</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+<!--=============== Info about reports ===========================-->
+<!--=============== Contains links to PDF's ==========-->
+
+    <section id="databaseReports">
+      <div class="container">
+        <div class="presentationsAndReportsSection">
+          <!-- All styling within presentationsAndReportsSection div
+            is done in 'Styling used across multiple pages' section of CSS -->
+          <h2>Reports</h2>
+          <p>
+          As part of the project, I produced a detailed 36-page report which
+          explained all the features listed above. The report uses
+          my own database for examples and illustrations. It also explained
+          concepts that are relevant to relational databases but were not
+          required in my own database, such as ‘Candidate’ and ‘Composite’ keys.
+          The report is also useful as it demonstrates I have knowledge that can
+          be very useful when creating SQL (Structured Query Language) statements.
+          </p>
+          <!--presentationBox div used for displaying images and links-->
+          <div class="presentationBox">
+            <!-- Presentation Boxes are styled near top of CSS
+              in multiple elements section -->
+            <h3>Relational Databases Report</h3>
+            <!-- Presentation Box images are styled in individual page sections
+              of CSS -->
+            <img src="Images/ReportDatabases1.jpg"
+              alt="Screenshot of Functions Guide" class="presentationBoxImagePortrait"/>
+              <!-- images given presentationBoxImagePortrait class so that
+                can be styled seperately to images in landscape orientation -->
+            <img src="Images/ReportDatabases6.jpg"
+              alt="Screenshot of Functions Guide" class="presentationBoxImagePortrait"/>
+            <img src="Images/ReportDatabases3.jpg"
+              alt="Screenshot of Functions Guide" class="presentationBoxImagePortrait"
+                id="hiddenImage1"/>
+                <!-- hiddenImage id used for hiding images in smaller
+                  viewports, only styled in Media Queries -->
+            <img src="Images/ReportDatabases4.jpg"
+              alt="Screenshot of Functions Guide" class="presentationBoxImagePortrait"
+                id="hiddenImage2"/>
+            <img src="Images/ReportDatabases5.jpg"
+              alt="Screenshot of Functions Guide" class="presentationBoxImagePortrait"
+                id="hiddenImage3"/>
+            <br>
+            <a href="Downloads/Databases/RelationalDatabaseReport.pdf">
+              Open as PDF</a>
+          </div>
+          <br>
+        </div>
+      </div>
+    </section>
+
+<!--=============== Downloads for databases ===========================-->
+    <section id="databaseDownloads">
+      <div class="container">
+        <div class="downloadsSection">
+        <!-- All styling within downloadsSection div is done
+          in 'Styling used across multiple pages' section of CSS -->
+          <h2>&#8659; Downloads &#8659;</h2>
+          <table>
+            <tr class="downloadsTableHeading">
+              <!--tr given id so that can be styled seperate from data rows-->
+              <th class="downloadsTableFileType">File Type</th>
+              <!-- th given class so can be hidden in mobile view,
+                styling only visible in Media Queries-->
+              <th>Information</th>
+              <th class="downloadsTableDownloadWord">Download</th>
+              <!-- th given class so can be hidden in mobile view,
+                styling only visible in Media Queries-->
+              <th class="downloadsTableDownloadSymbol">&#8659;</th>
+              <!-- th given class so can be hidden on larger screens -->
+            </tr>
+            <tr>
+              <td class="downloadsTableFileType">Access</td>
+              <!-- td given class so can be hidden in mobile view -->
+              <td>Database created for Diploma course. Created using
+                  Access 2013</td>
+              <td class="downloadArrow"><a href="Downloads/Databases/Database Assignment.accdb">
+                &#8659;</a></td>
+            </tr>
+            <tr>
+              <td class="downloadsTableFileType">Excel</td>
+              <!-- td given class so can be hidden in mobile view -->
+              <td>Excel file demonstrating all validations used in my database</td>
+              <td class="downloadArrow"><a href="Downloads/Databases/Database Validations.xlsx">
+                &#8659;</a></td>
+            </tr>
+            <tr>
+              <td class="downloadsTableFileType">Excel</td>
+              <!-- td given class so can be hidden in mobile view -->
+              <td>Excel file demonstrating all functions have been fully tested</td>
+              <td class="downloadArrow"><a href="Downloads/Databases/Test Plan.xlsx">
+                &#8659;</a></td>
+            </tr>
+            <tr>
+              <td class="downloadsTableFileType">Folder</td>
+              <td>Contains database, source images, entity relationsip diagram,<br>
+                proof of external file imports and exports, test plan and<br>
+                data validations</td>
+              <td class="downloadArrow"><a href="Downloads/Databases/DatabaseAndLinkedFiles.zip">
+                &#8659;</a></td>
+            </tr>
+          </table>
+          <hr class="sectionLineBreaks"> <!--large line running across the length
+            of the container, styled 'Styling used across multiple pages'
+            section of CSS-->
+        </div>
+      </div>
+    </section>
+
+<!--============= Contains table of database YouTube tutorials ==========-->
+    <section id="databasePageTutorials">
+      <div class="container">
+        <div class="tutorialsSection">
+            <!-- All styling within tutorialsSection div is done
+              in 'Styling used across multiple pages' section of CSS -->
+          <h2>&#9654; Tutorials &#9654;</h2>
+          <p>
+            Listed below are all my self-produced tutorials relating
+            specifically to relational databases
+          </p>
+          <p>A full list of my
+            tutorials for all subjects can be found
+              <a href="PortfolioTutorials.html">here</a>
+          </p>
+          <p>My YouTube channel can be found
+              <a href="https://www.youtube.com/channel/UCrTjBb8jy31tXihpLwltIVg">here</a>
+          </p>
+          <p id="tutorialsSectionDesktopOnlyText">
+            <!-- id created as this text only needs to appear in desktop view,
+              styled in Media Queries -->
+            <i>&#42;To open links in a new tab, hold
+            down the Ctrl key and click on the link&#42;</i>
+          </p>
+
+          <table>
+            <tr class="tutorialsTableHeading">
+              <th class="tutorialsTableNumberColumn">No.</th>
+              <!-- th given class so can be hidden in mobile view,
+                styling only visible in Media Queries-->
+              <th>Description</th>
+              <th>Link</th>
+            </tr>
+            <tr>
+              <td class="tutorialsTableNumberColumn">1</td>
+              <!-- td given class so can be hidden in mobile view,
+                styling only visible in Media Queries-->
+              <td>Awaiting upload</td>
+              <td class="playArrow"><a href="#">
+                &#9654;</a></td>
+            </tr>
+            <tr>
+              <td class="tutorialsTableNumberColumn">2</td>
+              <td>Awaiting upload</td>
+              <td class="playArrow"><a href="#">
+                &#9654;</a></td>
+            </tr>
+            <tr>
+              <td class="tutorialsTableNumberColumn">3</td>
+              <td>Awaiting upload</td>
+              <td class="playArrow"><a href="#">
+                &#9654;</a></td>
+            </tr>
+            <tr>
+              <td class="tutorialsTableNumberColumn">4</td>
+              <td>Complete playlist</td>
+              <td class="playArrow"><a href="#">
+                &#9654;</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+<!--========================= Footer ======================================-->
+    <footer>
+      <div class="container">
+        <p>Email:</p>
+        <a href="mailto:chrishotten@gmail.com">chrishotten@gmail.com</a>
+
+        <!--****Site links***-->
+        <p class="footerTitles">Site Links:</p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="PortfolioSpreadsheets.html">Spreadsheets</a></li>
+          <li><a href="PortfolioDatabases.html">Databases</a></li>
+          <li><a href="PortfolioWebCoding.html">Web Coding</a></li>
+          <li><a href="PortfolioTutorials.html">Tutorials</a></li>
+          <li><a href="PortfolioSitemap.html">Site Map</a></li>
+        </ul>
+
+        <!--****Social/Video media links***-->
+        <p class="footerTitles">Media & Social:</p>
+        <a href="https://www.youtube.com/channel/UCrTjBb8jy31tXihpLwltIVg" target="blank">
+          <img src="Images/IconYouTubeWhite.png" alt="White YouTube icon"/>
+        </a>
+        <a href="https://www.linkedin.com/in/christopher-hotten-ba44831a9" target="blank">
+          <img src="Images/IconLinkedInWhite150X150.png" alt="White LinkedIn icon"/>
+        </a>
+        <br>
+        <p>Copyright &copy; Chris Hotten 2020</p>
+      </div>
+    </footer>
+
+<!--========javascript and  javascript sheet location==================-->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>

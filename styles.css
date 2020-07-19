@@ -1,0 +1,1737 @@
+/* Global styling across all pages */
+
+body
+{
+  background-color: #f8f8f8;
+  font-family: 'Poppins', 'Manrope', 'Cabin', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h6
+{
+	margin:0
+}
+
+.container
+{
+  margin: auto;
+  overflow: hidden;
+  width: 60%;
+}
+
+/*=============== Header Logo and Navigation =====================*/
+/*------- displayed at top in CSS as will be used in all
+            pages and contains consistent content ------------ */
+
+#logoAndNav
+{
+  background-color: #f8f8f8;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#logo img
+{
+  max-width: 170px;
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.rightOfLogo
+{
+  float: right;
+  display: inline-block;
+  padding-left: 15px;
+  font-size: 20px;
+  padding-top: 13px;
+}
+
+.rightOfLogo img
+{
+  height: 55px;
+}
+
+#navigationBar
+{
+  background-color: #ae3a3a;
+  height: auto;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#navigationBar ul
+{
+  padding-left:0; /*code to stop list indenting to the right*/
+  list-style-type: none;
+}
+
+#navigationBar li
+{
+  display: inline;
+  color: #ffffff;
+}
+
+#navigationBar a
+{
+  background-color: #ae3a3a;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 40px 10px 40px 10px;
+  text-decoration: none;
+}
+
+#navigationBar a.active
+{
+  background-color: #f8f8f8;
+  color: #ae3a3a;
+}
+
+#navigationBar a:hover
+{
+  background-color: #f8f8f8;
+  color: #ae3a3a;
+  transition: 0.2s;
+}
+
+/*=============== Header Logo and Navigation =====================*/
+/*------- displayed at top in screen width media queries
+  as will be used in all pages and contains consistent content --------- */
+
+/* -- id's listed alphabetically then classes listed alphabetically --*/
+
+/*Styling for mobile/tablet menu*/
+
+#hamburgerMenuIcon
+{
+  height: 40px;
+  float: right;
+  padding-bottom: 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+#indexTopBorder
+{
+  border-top: 1px solid #ffffff;
+}
+
+#mobileLogo
+{
+  height: 40px;
+  float: left;
+  padding-bottom: 0px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+#mobileMenu a
+{
+  text-decoration: none;
+}
+
+#mobileMenu ul
+{
+  background-color: #ae3a3a;
+  height: 0;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position:absolute;
+  width: 100%;
+}
+
+#mobileMenu ul.visible
+{
+  height: auto;
+}
+
+#mobileMenu ul li
+{
+  text-align: center;
+  width: 100%;
+}
+
+#mobileMenu ul li a
+{
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  display: block;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px;
+}
+
+#mobileTabletBurgerMenu
+{
+  background-color: #ae3a3a;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 60px;
+  width: 100%;
+}
+
+/*=============== Footer =====================*/
+/*------- displayed at top in CSS as will be used in all
+            pages and contains consistent content ------------ */
+
+footer
+{
+  background-color: #ae3a3a;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a
+{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer img
+{
+  max-height: 30px;
+  padding-right: 10px;
+}
+
+footer li
+{
+  display: inline;
+  padding-right: 30px;
+}
+
+footer p
+{
+  color: #ffffff;
+  font-weight: bold;
+}
+
+footer ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding-bottom: 10px;
+  padding-left:0; /*stops list indenting to the right*/
+}
+
+/* ******* Styling used across multiple pages *************** */
+
+/*------- Styling the visible line breaks ------------ */
+
+.sectionLineBreaks
+{
+  background-color: #ae3a3a;
+  border-radius: 5px;
+  border-width: 0;
+  color: #ae3a3a;
+  height: 10px;
+}
+
+/*------- Styling description of assignment section ------------ */
+/* -- Spreadsheet, Database and Web Coding pages all use this section -- */
+
+.assDescription
+{
+  padding-top: 20px;
+}
+
+.assDescription p
+{
+ margin-left: 15%;
+ margin-right: 15%;
+ text-align: justify;
+}
+
+.openingParagraphsAvatar
+{
+  float: left;
+  margin-left: 15%;
+  padding-right: 15px;
+  width: 125px;
+}
+
+.openingParagraphsIcon /* opposite dimensions of
+.openingParagraphsAvatar so that sits correctly at
+opposite side */
+{
+  float: right;
+  margin-right: 15%;
+  padding-left: 15px;
+  padding-top: 10px;
+  width: 100px;
+}
+
+/*------- Styling the Presentations and Reports sections used
+in Spreadsheets, Databases and Web Coding pages------------ */
+
+.presentationsAndReportsSection h2
+{
+  background-color: #ae3a3a;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 23px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 4px 0px 4px 0px;
+  text-align: center;
+  width: 215px;
+}
+
+.presentationsAndReportsSection p
+{
+ padding-left: 15%;
+ padding-right: 15%;
+}
+
+/* --- Presentation boxes used in Spreadsheet, Database and Web Coding pages -- */
+
+.presentationBox
+{
+  background-color: #ae3a3a;
+  border-color: #ffffff;
+  border-radius: 10px;
+  border-style: double;
+  border-width: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: auto;
+  margin: auto;
+  padding-bottom: 20px;
+  text-align: center;
+  width: 70%
+}
+
+.presentationBox a
+{
+  color: #ffffff;
+  font-size: 17px;
+  padding: 20px;
+}
+
+.presentationBox h3
+{
+  color: #ffffff;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.presentationBoxImageLandscape
+{
+  border-color: #bbbfc2;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 5px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 100px;
+}
+
+.presentationBoxImagePortrait
+{
+  border-color: #bbbfc2;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 5px;
+  height: 100px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* .hiddenImage1, hiddenImage2 and hiddenImage3 only styled in media queries */
+
+/*------- Styling download section used across in Spreadsheet,
+    Databases and Web Coding pages ------------ */
+
+.downloadArrow a
+{
+  color: #ae3a3a;
+  font-size: 20px;
+}
+
+.downloadsSection h2
+{
+  background-color: #ae3a3a;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 23px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 4px 0px 4px 0px;
+  text-align: center;
+  width: 230px;
+}
+
+.downloadsSection table, th, td
+{
+  border-width: 3px;
+  border-style: solid;
+  border-color: #ae3a3a;
+  border-collapse: collapse;
+  margin: auto;
+  text-align: center;
+}
+
+.downloadsSection table
+{
+  margin-bottom: 40px;
+}
+
+.downloadsSection th, td
+{
+  padding: 10px;
+}
+
+.downloadsTableHeading
+{
+  border-width: 3px;
+  border-style: solid;
+  border-color: #ae3a3a;
+  background-color: #ae3a3a;
+  border-collapse: collapse;
+  color: #ffffff;
+  text-align: center;
+}
+
+.downloadsTableDownloadSymbol
+{
+  display: none;
+}
+
+/*------- Styling tutorials section used across Spreadsheet, Database
+            and Web Coding (SSDBWC) individual pages ------------ */
+
+#tutorialsIntroductionText
+{
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.playArrow a
+{
+  color: #ae3a3a;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.tutorialsSection h2
+{
+  background-color: #ae3a3a;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 23px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding: 4px 0px 4px 0px;
+  text-align: center;
+  width: 200px;
+}
+
+.tutorialsSection p
+{
+  text-align: center;
+}
+
+.tutorialsSection table, th, td
+{
+  border-width: 3px;
+  border-style: solid;
+  border-color: #ae3a3a;
+  border-collapse: collapse;
+  margin: auto;
+  text-align: center;
+}
+
+.tutorialsSection table
+{
+  margin-bottom: 40px;
+}
+
+.tutorialsSection th, td
+{
+  padding: 10px;
+}
+
+.tutorialsSection img
+{
+  height: 115px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.tutorialsSection
+{
+  text-align: center;
+}
+
+.tutorialsSection a
+{
+  color: #ae3a3a;
+  text-decoration: none;
+}
+
+.tutorialsTableHeading
+{
+  border-width: 3px;
+  border-style: solid;
+  border-color: #ae3a3a;
+  background-color: #ae3a3a;
+  border-collapse: collapse;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+/* =============== INDEX page ===================== */
+
+/* styling for individual parts of the page
+    appears in order of that matching the html page
+    starting from below the header downwards */
+/* id's then run first in alphabetical order */
+/* followed by classes in alphabetical order */
+
+/*------- Styling the Hero section ------------ */
+
+#hero
+{
+  background:
+    linear-gradient(
+      to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.9)
+      ), /*block of code darkens the image towards the bottom*/
+      url('Images/HeroBackground1Blurred.jpg') no-repeat 0 -200px;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; /*block of code so 'cover' works in multiple browsers*/
+  color: #ffffff;
+  margin: 0;
+  min-height: 400px;
+  /*height: auto;*/
+  /*min-height: auto;*/
+  text-align: center;
+}
+
+#hero h1
+{
+  font-size: 50px;
+}
+
+#hero h2
+{
+  font-size: 30px;
+  font-style: oblique;
+  padding: 10px 0px 30px 0px;
+  text-shadow: 1px 1px 0 #ae3a3a;
+}
+
+#hero img
+{
+  border-color: #ae3a3a;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 10px;
+  margin-top: 35px;
+  max-height: 250px;
+}
+
+/*------- Styling the About Me section ------------ */
+
+#aboutMeText
+{
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+#aboutMeText p
+{
+  letter-spacing: 1px;
+  padding-left: 13%;
+  padding-right: 13%;
+  text-align: justify;
+  text-indent: 50px;
+}
+
+/*------- Styling the Subject Links/Pictures section ------------ */
+
+#subjectLinks
+{
+  margin-bottom: 40px;
+}
+
+#subjectLinks a
+{
+  color: #ae3a3a;
+  font-size: 21px;
+  text-decoration: none;
+}
+
+#subjectLinks img
+{
+  border-radius: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  filter: grayscale(0%);
+  height: 190px;
+  margin-bottom: 5px;
+}
+
+#subjectLinks img:hover
+{
+  filter: grayscale(100%);
+  transition:all 0.2s;
+}
+
+.boxForPictureAndText
+{
+  float: left;
+  text-align: center;
+  width: 25%;
+}
+
+/*------- Styling the Certificates & Experience section ------------ */
+
+#certificates
+{
+  height: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#certificates h4
+{
+  background-color: #ae3a3a;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 18px;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 4px 0px 4px 0px;
+  width: 300px;
+}
+
+.boxForBadge
+{
+  float: left;
+  padding-left: 0px;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 12.5%;
+}
+
+.boxForBadge img
+{
+  height: 70px;
+  padding: none;
+}
+
+.boxforCertificates
+{
+  float: left;
+  height: 220px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-top: 10px;
+  text-align: center;
+  width: 20%;
+}
+
+.boxforCertificates h6
+{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.boxforCertificates img
+{
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ae3a3a;
+  height: 170px;
+  padding: none;
+}
+
+/* =============== SPREADSHEETS page =================================== */
+
+/* styling for individual sections appears in order of that
+    matching the html page starting from below the header downwards */
+/* id's then run first in alphabetical order */
+/* followed by classes in alphabetical order */
+
+
+/* Styling for the assignment description appears in the
+  'styling for multiple pages section' of CSS as Spreadsheet,
+  Database and Web Coding pages all use an Assignment
+  Description section */
+
+/*------- Styling spreadsheet list items section ------------ */
+
+#spreadsheetDataTypesFunctionsList
+{
+  color: #ffffff;
+  float: left;
+  margin-left: 10%;
+  width: 35%;
+}
+
+#spreadsheetFeaturesList
+{
+  color: #ffffff;
+  float: left;
+  margin-left: 15%;
+  margin-right: 5%;
+  width: 35%;
+}
+
+#spreadsheetItemsLists
+{
+  background-color: #ae3a3a;
+  padding-top: 10px;
+}
+
+#spreadsheetItemsLists h3
+{
+  font-size: 22px;
+  padding-top: 10px;
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+
+#spreadsheetItemsLists li
+{
+  padding-bottom: 10px;
+}
+
+#spreadsheetItemsLists ul
+{
+  padding-left: 0;
+}
+
+/* =============== DATABASES page =================================== */
+
+/* styling for individual sections appears in order of that
+    matching the html page starting from below the header downwards */
+/* id's then run first in alphabetical order */
+/* followed by classes in alphabetical order */
+
+
+/* Styling for the assignment description appears in the
+  'styling for multiple pages section' of CSS as Spreadsheet,
+  Database and Web Coding pages all use an Assignment
+  Description section */
+
+/*------- Styling database list items section ------------ */
+
+#databaseItemsLists
+{
+  background-color: #ae3a3a;
+  font-weight: bold;
+  height: auto;
+  padding-top: 10px;
+}
+
+#databaseItemsLists h3
+{
+  font-size: 22px;
+  padding-top: 10px;
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+
+#databaseFeaturesList
+{
+  color: #ffffff;
+  text-align: center;
+}
+
+#databaseItemsLists li
+{
+  padding-bottom: 15px;
+}
+
+#databaseItemsLists ul
+{
+  padding-left: 0;
+}
+
+.databaseSubList
+{
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* =============== WEB CODING page =================================== */
+
+/* styling for individual sections appears in order of that
+    matching the html page starting from below the header downwards */
+/* id's then run first in alphabetical order */
+/* followed by classes in alphabetical order */
+
+
+/* Styling for the assignment description appears in the
+  'styling for multiple pages section' of CSS as Spreadsheet,
+  Database and Web Coding pages all use an Assignment
+  Description section */
+
+/*------- Styling web coding responsive displays section ------------ */
+
+#webCodingDisplays
+{
+  background-color: #ae3a3a;
+}
+
+#webCodingDisplays h3
+{
+  color: #ae3a3a;
+  font-size: 37px;
+}
+
+#webCodingDisplays img
+{
+  height: 275px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#boxForScreenDisplayAndText1
+{
+  float: left;
+  text-align: center;
+  width: 30%;
+}
+
+#boxForScreenDisplayAndText2
+{
+  float: left;
+  text-align: center;
+  width: 40%;
+}
+
+/*------- Styling web coding list items section ------------ */
+
+#webCodingFeaturesList1
+{
+  color: #ffffff;
+  float: left;
+  margin-left: 15%;
+  margin-right: 5%;
+  width: 35%;
+}
+
+#webCodingFeaturesList2
+{
+  color: #ffffff;
+  float: left;
+  margin-left: 10%;
+  width: 35%;
+}
+
+#webCodingItemsLists
+{
+  background-color: #ae3a3a;
+  height: auto;
+  padding-top: 10px;
+}
+
+#webCodingItemsLists h3
+{
+  font-size: 22px;
+  padding-top: 10px;
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+
+#webCodingItemsLists img
+{
+  display: none;
+}
+
+#webCodingItemsLists li
+{
+  padding-bottom: 10px;
+}
+
+#webCodingItemsLists ul
+{
+  padding-left: 0;
+}
+
+/*------- Styling web coding div for links to Book DJ web pages ------------ */
+
+#bookDJResolutionSelectLeft
+{
+  float: left;
+  width: 46%;
+}
+
+#bookDJResolutionSelectLeft a
+{
+  float: right;
+}
+
+#bookDJResolutionSelectCentre
+{
+  float: left;
+  width: 8%;
+}
+
+#bookDJResolutionSelectCentre p
+{
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+#bookDJResolutionSelectRight
+{
+  float: left;
+  width: 46%;
+
+}
+
+#bookDJResolutionSelectRight a
+{
+  float: left;
+}
+
+#bookDJWebpagesLinks
+{
+  text-align: center;
+}
+
+#bookDJWebpagesLinks a
+{
+  color: #ae3a3a;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#bookDJWebpagesLinks img
+{
+  width: 260px;
+}
+
+#bookDJWebpagesLinks p
+{
+  color: #ae3a3a;
+}
+
+/* =============== TUTORIALS page =================================== */
+
+#filmReelImagesDiv
+{
+text-align: center;
+font-size: 0;
+}
+
+#filmReelImagesDiv img
+{
+  width: 150px;
+  padding: 20px 0px 20px 0px;
+}
+
+#tutorialsPageWelcomeImage
+{
+  text-align: center;
+}
+
+#tutorialsPageWelcomeImage img
+{
+  height: 220px;
+  padding-top: 20px;
+}
+
+#youTubeVideo
+{
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+#youTubeVideo iframe
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.tutorialScreenshotsSection
+{
+  background-color: #ae3a3a;
+  height: auto;
+}
+
+.youTubeContainer
+{
+  max-width: 500px;
+  margin: auto;
+  padding-top: 25px;
+}
+
+/* =============== Sitemap page =================================== */
+
+#sitemap a
+{
+  color: #ae3a3a;
+}
+
+#sitemap ul
+{
+  color: #ae3a3a;
+  list-style-type: disc;
+  margin-right: 10px;
+
+}
+
+
+/*=========********* MEDIA QUERIES **********================*/
+
+  /*-- Arranged smallest to largest max-width --*/
+
+  @media only screen and (min-width: 300px) and (max-width: 799px)
+{
+
+  /* Global styling across all pages */
+
+  .container
+  {
+    width: 100%;
+  }
+
+  #navigationBar
+  {
+    display: none; /*stops desktop navigation bar being displayed*/
+  }
+
+  #logo
+  {
+    display: none; /*stops desktop/laptop logo being displayed*/
+  }
+
+
+  /*=============== Footer =====================*/
+  /*------- displayed at top in screen width media queries
+    as will be used in all pages and contains consistent content --------- */
+
+  footer li
+  {
+    display:block;
+    padding-bottom: 10px;
+    padding-right: 0px;
+    padding-top: 10px;
+  }
+
+  /* ******* Styling used across multiple pages *************** */
+
+  /*------- Styling the visible line breaks ------------ */
+
+  .sectionLineBreaks
+  {
+    border-radius: 0px;
+  }
+
+  /*------- Styling description of assignment section ------------ */
+  /* -- Spreadsheet, Database and Web Coding pages all use this section -- */
+
+  .assDescription p
+  {
+   margin-left: 5%;
+   margin-right: 5%;
+  }
+
+  .openingParagraphsAvatar
+  {
+    margin-left: 5%;
+  }
+
+  .openingParagraphsIcon /* opposite dimensions of
+  .openingParagraphsAvatar so that sits correctly at
+  opposite side */
+  {
+    margin-right: 5%;
+  }
+
+  /*------- Styling the Presentations and Reports sections used
+  in Spreadsheets, Databases and Web Coding pages------------ */
+
+  .presentationsAndReportsSection p
+  {
+   padding-left: 5%;
+   padding-right: 5%;
+  }
+
+  /* --- Presentation boxes used in Spreadsheet, Database and Web Coding pages -- */
+
+  .presentationBox
+  {
+    width: 80%
+  }
+
+  /* Hidden Image class used to hide images from mobile/tablet screen */
+  #hiddenImage1, #hiddenImage2, #hiddenImage3
+  {
+    display: none;
+  }
+
+  /*------- Styling download section used across in Spreadsheet,
+      Databases and Web Coding pages ------------ */
+
+  .downloadsSection table
+  {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+
+  .downloadsTableDownloadWord
+  {
+    display: none;
+  }
+
+  .downloadsTableDownloadSymbol
+  {
+    display: block;
+    text-decoration: underline;
+  }
+
+  .downloadsTableFileType
+  {
+    display: none;
+  }
+
+
+  .downloadsTableHeading
+  {
+    font-size: 20px;
+  }
+
+  /*------- Styling tutorials section used across Spreadsheet, Database
+              and Web Coding individual pages ------------ */
+
+  #tutorialsIntroductionText
+  {
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align:justify;
+  }
+
+  .playArrow a
+  {
+    font-size: 20px;
+  }
+
+  .tutorialsSection h2
+  {
+    margin-top: 20px;
+  }
+
+  .tutorialsSection p
+  {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .tutorialsSection table
+  {
+    margin-bottom: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+
+  .tutorialsSection img
+  {
+    height: 120px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+  }
+
+  #tutorialsSectionDesktopOnlyText
+  {
+    display: none;
+  }
+
+  .tutorialsTableNumberColumn
+  {
+    display: none;
+  }
+
+  /* =============== INDEX page ===================== */
+
+  /*------- Styling the Hero section ------------ */
+
+  #hero
+  {
+    background:
+      linear-gradient(
+        to bottom,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 0.9)
+        ), /*block of code darkens the image towards the bottom*/
+        url('Images/HeroBackground1Blurred.jpg') no-repeat 0 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; /*block of code so 'cover' works in multiple browsers*/
+    min-height: 300px;
+  }
+
+  #hero h1
+  {
+    font-size: 35px;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 0 #ae3a3a;
+  }
+
+  #hero h2
+  {
+    font-size: 22px;
+    font-style: oblique;
+    padding: 10px 20px 30px 20px;
+    text-shadow: none;
+  }
+
+  #hero img
+  {
+    border-width: 5px;
+    margin-top: 15px;
+    max-height: 150px;
+  }
+
+  /*------- Styling the About Me section ------------ */
+
+  #aboutMeText
+  {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  #aboutMeText p
+  {
+    font-size: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-indent: 0px;
+  }
+
+  /*------- Styling the Subject Links/Pictures section ------------ */
+
+  #subjectLinks
+  {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  #subjectLinks a
+  {
+    font-size: 20px;
+  }
+
+  #subjectLinks img:hover
+  {
+    filter: grayscale(0%);
+    transition:all 0.0s;
+  }
+
+  .boxForPictureAndText
+  {
+    float: none;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  /*------- Styling the Certificates & Experience section ------------ */
+
+  .boxForBadge
+  {
+    padding-bottom: 20px;
+    width: 33.3%;
+  }
+
+  .boxforCertificates
+  {
+    width: 50%;
+  }
+
+  /* =============== SPREADSHEETS page =================================== */
+
+  /*------- Styling spreadsheet list items section ------------ */
+
+  #spreadsheetDataTypesFunctionsList
+  {
+    border-radius: 10px;
+    float: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+
+  #spreadsheetFeaturesList
+  {
+    border-radius: 10px;
+    float: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+
+  #spreadsheetItemsLists
+  {
+    text-align: center;
+  }
+
+  #spreadsheetItemsLists h3
+  {
+    text-decoration: none;
+  }
+
+  #spreadsheetItemsLists ul
+  {
+    list-style: none;
+  }
+
+  /* =============== DATABASES page =================================== */
+
+  /*------- Styling database list items section ------------ */
+
+  #databaseFeaturesList
+  {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #databaseItemsLists ul
+  {
+    list-style-type: none;
+  }
+
+  /* =============== WEB CODING page =================================== */
+
+  /*------- Styling web coding responsive displays section ------------ */
+
+  #webCodingDisplays img
+  {
+    height: 220px;
+  }
+
+  #boxForScreenDisplayAndText1
+  {
+    float: none;
+    width: 100%;
+  }
+
+  #boxForScreenDisplayAndText2
+  {
+    float: none;
+    width: 100%;
+  }
+
+  /*------- Styling web coding list items section ------------ */
+
+  #webCodingFeaturesList1
+  {
+    float: none;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+  }
+
+  #webCodingFeaturesList2
+  {
+    float: none;
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  #webCodingItemsLists
+  {
+    text-align: center;
+  }
+
+  #webCodingItemsLists img
+  {
+    display: block;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #webCodingItemsLists li
+  {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #webCodingItemsLists ul
+  {
+    list-style-type: none;
+  }
+
+  /* =============== TUTORIALS page =================================== */
+
+  #tutorialsPageWelcomeImage img
+  {
+    height: 185px;
+  }
+
+  /* Hidden Div class used to hide images from mobile/tablet screen */
+  #tutorialScreenshotHidden1, #tutorialScreenshotHidden2, #tutorialScreenshotHidden3
+  {
+    display: none;
+  }
+
+}
+
+    @media only screen and (min-width: 800px) and (max-width: 1000px)
+{
+
+    /* Global styling across all pages */
+
+    .container
+    {
+      width: 100%;
+    }
+
+    #navigationBar
+    {
+      display: none; /*stops desktop navigation bar being displayed*/
+    }
+
+    #logo
+    {
+      display: none; /*stops desktop/laptop logo being displayed*/
+    }
+
+  /* ******* Styling used across multiple pages *************** */
+
+  /*------- Styling the visible line breaks ------------ */
+
+    .sectionLineBreaks
+    {
+      border-radius: 0px;
+    }
+
+    /*------- Styling download section used across in Spreadsheet,
+        Databases and Web Coding pages ------------ */
+
+    .downloadsSection table
+    {
+      margin-left: 5%;
+      margin-right: 5%;
+      width: 90%;
+    }
+
+    /* =============== INDEX page ===================== */
+
+    /*------- Styling the Hero section ------------ */
+
+    #hero
+    {
+      background:
+        linear-gradient(
+          to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.9)
+          ), /*block of code darkens the image towards the bottom*/
+          url('Images/HeroBackground1Blurred.jpg') no-repeat 0 0px;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover; /*block of code so 'cover' works in multiple browsers*/
+      min-height: 300px;
+    }
+
+    /*------- Styling the Subject Links/Pictures section ------------ */
+
+    #subjectLinks
+    {
+      padding-bottom: 0px;
+    }
+
+    #subjectLinks a
+    {
+      font-size: 16px;
+    }
+
+    #subjectLinks img:hover
+    {
+      filter: grayscale(0%);
+      transition:all 0.0s;
+    }
+
+    /*------- Styling the Certificates & Experience section ------------ */
+
+    .boxforCertificates
+    {
+      width: 25%;
+    }
+
+    /* hiding images in functions and reports presentation boxes */
+
+    #hiddenImage1
+    {
+      display: none;
+    }
+
+    /* =============== WEB CODING page =================================== */
+
+    /*------- Styling web coding responsive displays section ------------ */
+
+    #webCodingDisplays img
+    {
+      height: 200px;
+    }
+
+    /*------- Styling web coding list items section ------------ */
+
+    #webCodingFeaturesList1
+    {
+
+      color: #ffffff;
+      float: left;
+      margin-left: 10%;
+      margin-right: 5%;
+      width: 35%;
+    }
+
+    #webCodingFeaturesList2
+    {
+      color: #ffffff;
+      float: left;
+      margin-left: 10%;
+      margin-right: 5%;
+      width: 35%;
+    }
+
+    /* =============== TUTORIALS page =================================== */
+
+    /*makes one of the divs none visible to avoid page looked congested
+    on tablet view*/
+    #tutorialScreenshotHidden1
+    {
+      display: none;
+    }
+
+    #tutorialsSectionDesktopOnlyText
+    {
+      display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1280px)
+{
+
+    /* Global styling across all pages */
+
+    .container
+    {
+      width: 100%;
+    }
+
+    #navigationBar
+    {
+      display: none; /*stops desktop navigation bar being displayed*/
+    }
+
+    #logo
+    {
+      display: none; /*stops desktop/laptop logo being displayed*/
+    }
+
+    /* ******* Styling used across multiple pages *************** */
+
+    /*------- Styling the visible line breaks ------------ */
+
+    .sectionLineBreaks
+    {
+      border-radius: 0px;
+    }
+
+    /* =============== INDEX page ===================== */
+
+    /*------- Styling the Hero section ------------ */
+
+    #hero
+    {
+      background:
+        linear-gradient(
+          to bottom,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.9)
+          ), /*block of code darkens the image towards the bottom*/
+          url('Images/HeroBackground1Blurred.jpg') no-repeat 0 0px;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover; /*block of code so 'cover' works in multiple browsers*/
+      min-height: 300px;
+    }
+
+    /*------- Styling the Subject Links/Pictures section ------------ */
+
+    #subjectLinks
+    {
+      padding-bottom: 0px;
+    }
+
+    #subjectLinks a
+    {
+      font-size: 19px;
+    }
+
+    #subjectLinks img:hover
+    {
+      filter: grayscale(0%);
+      transition:all 0.0s;
+    }
+
+    #tutorialsSectionDesktopOnlyText
+    {
+      display: none;
+    }
+
+    /* =============== WEB CODING page =================================== */
+
+    /*------- Styling web coding list items section ------------ */
+
+    #webCodingFeaturesList1
+    {
+
+      color: #ffffff;
+      float: left;
+      margin-left: 15%;
+      margin-right: 5%;
+      width: 30%;
+    }
+
+    #webCodingFeaturesList2
+    {
+      color: #ffffff;
+      float: left;
+      margin-left: 10%;
+      margin-right: 10%;
+      width: 30%;
+    }
+
+}
+
+    /* ==== Desktop/laptop resolution starts at 1281 width ==== */
+
+    @media only screen and (min-width: 1281px) and (max-width: 1349px)
+{
+
+    .container
+    {
+      width: 90%;
+    }
+
+    #mobileMenu
+    {
+      display: none;
+    }
+
+    .mobileParagraphBreaks
+    {
+      display: none;
+    }
+
+}
+
+    /* ==== Desktop/laptop resolutions starting at 1350 width ==== */
+
+    @media only screen and (min-width: 1350px) and (max-width: 1599px)
+{
+
+    .container
+    {
+      width: 80%;
+    }
+
+    #mobileMenu
+    {
+      display: none;
+    }
+
+    .mobileParagraphBreaks
+    {
+      display: none;
+    }
+
+}
+
+    /* ==== Desktop/laptop resolutions starting at 1600 width ==== */
+
+    @media screen and (min-width: 1600px)
+{
+
+    /*.container
+    {
+      width: 60%;
+    }*/
+
+    #mobileMenu
+    {
+      display: none;
+    }
+
+    .mobileParagraphBreaks
+    {
+      display: none;
+    }
+
+}
+
+    /* ==== Desktop/laptop resolutions starting at 1921 width ==== */
+
+    @media screen and (min-width: 1921px)
+{
+
+    .container
+    {
+      width: 45%;
+    }
+
+    #mobileMenu
+    {
+      display: none;
+    }
+
+    .mobileParagraphBreaks
+    {
+      display: none;
+    }
+
+}
+
+    /* ==== Desktop/laptop resolutions starting at 2561 width ==== */
+
+    @media screen and (min-width: 2561px)
+    {
+
+    .container
+    {
+      width: 30%;
+    }
+
+    #mobileMenu
+    {
+      display: none;
+    }
+
+    .mobileParagraphBreaks
+    {
+      display: none;
+    }
+
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<!--=======Tells a browser to match the viewport width
+     to that of the device width====================================-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<!--============= Search engine result content ====================-->
+    <meta name="description" content="Chris Hotten portfolio sitemap">
+    <meta name="keywords" content="Sitemap">
+    <meta name="author" content="Chris Hotten, Christopher Hotten">
+    <title>Chris Hotten | Sitemap</title>
+
+<!--============== Stylesheet location =============================-->
+    <link href="styles.css" rel="stylesheet" />
+
+<!--=========================Font-family source links==================-->
+  	<link href="https://fonts.googleapis.com/css?family=Poppins" rel='stylesheet'>
+  	<link href="https://fonts.googleapis.com/css?family=Cabin" rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Manrope" rel='stylesheet'>
+
+<!-- Javascript is at bottom of html -->
+  </head>
+
+<!--========== ****HTML BODY STARTS****** =========================-->
+  <body>
+    <header id="logoAndNav"><!--header has id for sticky in CSS-->
+      <div class="container">
+        <div id="logo">
+          <a href="index.html">
+            <img src="Images/CHLogoLetteringBlackSwishRed.png"
+              alt="Chris Hotten Logo"/>
+          </a>
+          <a href="mailto:chrishotten@gmail.com" class="rightOfLogo">
+            <img src="Images/IconEmail4RedCircle250X250.png" alt="Email symbol"/>
+          </a>
+          <a href="https://www.linkedin.com/in/christopher-hotten-ba44831a9" target="blank" class="rightOfLogo">
+            <img src="Images/IconLinkedin3RedBackgroundCircleA.png" alt="LinkedIn icon"/>
+          </a>
+        </div>
+      </div>
+      <nav id="navigationBar">
+        <div class="container">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li>|</li>
+            <li><a href="PortfolioSpreadsheets.html">SPREADSHEETS</a></li>
+            <li>|</li>
+            <li><a href="PortfolioDatabases.html">DATABASES</a></li>
+            <li>|</li>
+            <li><a href="PortfolioWebCoding.html" class="active">WEB CODING</a></li>
+            <li>|</li>
+            <li><a href="PortfolioTutorials.html">TUTORIALS</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- Sperate nav section for links for mobile/tablet screens -->
+    <!-- ensures no conflicts occur with larger size screen links -->
+    <!-- all styling for this nav is in CSS media queries -->
+      <nav id="mobileMenu">
+        <div id="mobileTabletBurgerMenu">
+          <a href="index.html">
+            <img src="Images/ChrisHottenLogo2WhiteNoSwish3.png"
+              alt="Chris Hotten Logo" id="mobileLogo"/>
+          </a>
+          <a href="#"> <!-- href left blank as used in javascript -->
+            <img src="Images/HamburgerMenuWhite.png"
+              alt="Mobile menu button" id="hamburgerMenuIcon"/>
+          </a>
+        </div>
+        <div id="mobileMenuLinks">
+          <ul>
+            <li><a href="index.html" id="indexTopBorder">HOME</a></li>
+            <!-- id created so white line appears seperates
+              border across top of mobile view and the 'Home' link -->
+            <li><a href="PortfolioSpreadsheets.html">SPREADSHEETS</a></li>
+            <li><a href="PortfolioDatabases.html">DATABASES</a></li>
+            <li><a href="PortfolioWebCoding.html">WEB CODING</a></li>
+            <li><a href="PortfolioTutorials.html">TUTORIALS</a></li>
+            <li><a href="mailto:chrishotten@gmail.com">Email Me</a></li>
+            <li><a href="https://www.linkedin.com/in/christopher-hotten-ba44831a9">LinkedIn Profile</a></li>
+          </ul>
+        </div>
+      <nav>
+    </header>
+
+<!--========== Sitemap HTML starts =========================-->
+    <section id="sitemap">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Home</a>
+            <ul>
+              <li><a href="PortfolioWebsiteSpreadsheets.html">Spreadsheets</a></li>
+                <ul>
+                  <li><a href="Downloads/Spreadsheets/FunctionsAnnotatedScreens.pdf">Functions
+                    Presentation</a></li>
+                  <li><a href="Downloads/Spreadsheets/SpreadsheetErrorGuide.pdf">Error
+                    Guide Presentation</a></li>
+                  <li><a href="Downloads/Spreadsheets/Downloads/Spreadsheets/Assignment.xlsx">Workbook
+                    created for Diploma Course. Created using Excel 2013</a></li>
+                  <li><a href="Downloads/Spreadsheets/WorkbookAndLinkedFiles.zip">Workbook
+                    and associated files for linked operation</a></li>
+                </ul>
+              <li><a href="PortfolioWebsiteDatabases.html">Databases</a></li>
+                <ul>
+                  <li><a href="Downloads/Databases/RelationalDatabaseReport.pdf">Relational
+                    Databases Report</a></li>
+                  <li><a href="Downloads/Databases/Database Assignment.accdb">Database
+                    created for Diploma course. Created using Access 2013</a></li>
+                  <li><a href="Downloads/Databases/Database Validations.xlsx">Excel file
+                    demonstrating all validations used in my database</a></li>
+                  <li><a href="Downloads/Databases/Test Plan.xlsx">Excel file
+                    demonstrating all functions have been fully tested</a></li>
+                  <li><a href="Downloads/Databases/DatabaseAndLinkedFiles.zip">Contains database,
+                    source images, entity relationsip diagram,<br>
+                    proof of external file imports and exports, test plan and<br>
+                    data validations</a></li>
+                </ul>
+              <li><a href="PortfolioWebsiteWebCoding.html">Web Coding</a></li>
+                <ul>
+                  <li><a href="https://github.com/ChrisHotten/Portfolio-Website" target="_blank">GitHub
+                    repository of files used in the creation of this site</a></li>
+                  <li><a href="Downloads/WebCoding/BookDJ/SitemapWireframesMoodboard.pdf">Book
+                    DJ Planning</a></li>
+                  <li><a href="Downloads/WebCoding/BookDJ/WebpageExamples.pdf">Book
+                    DJ Preparation</a></li>
+                  <li><a href="Downloads/WebCoding/BookDJ/WebPageDesignReport.pdf">Web report</a></li>
+                  <li><a href="CollegeBookDJWebsite/Version 1_0/1366 X 768 Resolution/index.html"
+                    target="_blank">Book DJ Site (1366 X 768 Resolution)</a></li>
+                  <li><a href="CollegeBookDJWebsite/Version 1_1/1920 X 1080 Resolution/index.html"
+                    target="_blank">Book DJ Site (1920 X 1080 Resolution)</a></li>
+                  <li><a href="https://github.com/ChrisHotten/BookDJ-Website-1366X768-Resolution" target="_blank">GitHub
+                    repository of files used for the Book DJ website (1366 X 768 resolution)</a></li>
+                  <li><a href="https://github.com/ChrisHotten/BookDJ-Website-1920X1080-Resolution" target="_blank">GitHub
+                    repository of files used for the Book DJ website (1920 X 1080 resolution)</a></li>
+                </ul>
+              <li><a href="PortfolioWebsiteTutorials.html">Tutorials</a></li>
+              <li><a href="https://www.youtube.com/channel/UCrTjBb8jy31tXihpLwltIVg">My YouTube channel</a</li>
+              <li><a href="https://www.linkedin.com/in/christopher-hotten-ba44831a9">My LinkedIn Page</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+<!--========================= Footer ======================================-->
+    <footer>
+      <div class="container">
+
+        <p>Email:</p>
+        <a href="mailto:chrishotten@gmail.com">chrishotten@gmail.com</a>
+
+        <!--****Site links***-->
+        <p class="footerTitles">Site Links:</p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="PortfolioSpreadsheets.html">Spreadsheets</a></li>
+          <li><a href="PortfolioDatabases.html">Databases</a></li>
+          <li><a href="PortfolioWebCoding.html">Web Coding</a></li>
+          <li><a href="PortfolioTutorials.html">Tutorials</a></li>
+          <li><a href="PortfolioSitemap.html">Site Map</a></li>
+        </ul>
+
+        <!--****Social/Video media links***-->
+        <p class="footerTitles">Media & Social:</p>
+        <a href="https://www.youtube.com/channel/UCrTjBb8jy31tXihpLwltIVg" target="blank">
+          <img src="Images/IconYouTubeWhite.png" alt="White YouTube icon"/>
+        </a>
+        <a href="https://www.linkedin.com/in/christopher-hotten-ba44831a9" target="blank">
+          <img src="Images/IconLinkedInWhite150X150.png" alt="White LinkedIn icon"/>
+        </a>
+        <br>
+        <p>Copyright &copy; Chris Hotten 2020</p>
+      </div>
+    </footer>
+
+<!--========javascript and  javascript sheet location==================-->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="javascript.js"></script>
+
+  </body>
+</html>

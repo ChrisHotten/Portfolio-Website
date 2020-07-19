@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<!--=======Tells a browser to match the viewport width
+     to that of the device width====================================-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<!--============= Search engine result content ====================-->
+    <meta name="description" content="Chris Hotten portfolio YouTube tutorials">
+    <meta name="keywords" content="Tutorials, Excel, Spreadsheets, Access,
+      Databases, Relational Databases, HTML, CSS, Javascript, Web">
+    <meta name="author" content="Chris Hotten, Christopher Hotten">
+    <title>Chris Hotten | Tutorials</title>
+
+<!--============== Stylesheet location =============================-->
+    <link href="styles.css" rel="stylesheet" />
+
+<!--=========================Font-family source links==================-->
+  	<link href="https://fonts.googleapis.com/css?family=Poppins" rel='stylesheet'>
+  	<link href="https://fonts.googleapis.com/css?family=Cabin" rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Manrope" rel='stylesheet'>
+
+<!-- Javascript is at bottom of html -->
+  </head>
+
+<!--========== ****HTML BODY STARTS****** =========================-->
+  <body>
+    <header id="logoAndNav"><!--header has id for sticky in CSS-->
+      <div class="container">
+        <div id="logo">
+          <a href="index.html">
+            <img src="Images/CHLogoLetteringBlackSwishRed.png"
+              alt="Chris Hotten Logo"/>
+          </a>
+          <a href="mailto:chrishotten@gmail.com" class="rightOfLogo">
+            <img src="Images/IconEmail4RedCircle250X250.png" alt="Email symbol"/>
+          </a>
+          <a href="https://www.linkedin.com/in/christopher-hotten-ba44831a9" target="blank" class="rightOfLogo">
+            <img src="Images/IconLinkedin3RedBackgroundCircleA.png" alt="LinkedIn icon"/>
+          </a>
+        </div>
+      </div>
+      <nav id="navigationBar">
+        <div class="container">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li>|</li>
+            <li><a href="PortfolioSpreadsheets.html">SPREADSHEETS</a></li>
+            <li>|</li>
+            <li><a href="PortfolioDatabases.html">DATABASES</a></li>
+            <li>|</li>
+            <li><a href="PortfolioWebCoding.html">WEB CODING</a></li>
+            <li>|</li>
+            <li><a href="PortfolioTutorials.html" class="active">TUTORIALS</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- Sperate nav section for links for mobile/tablet screens -->
+    <!-- ensures no conflicts occur with larger size screen links -->
+    <!-- all styling for this nav is in CSS media queries -->
+      <nav id="mobileMenu">
+        <div id="mobileTabletBurgerMenu">
+          <a href="index.html">
+            <img src="Images/ChrisHottenLogo2WhiteNoSwish3.png"
+              alt="Chris Hotten Logo" id="mobileLogo"/>
+          </a>
+          <a href="#"> <!-- href left blank as used in javascript -->
+            <img src="Images/HamburgerMenuWhite.png"
+              alt="Mobile menu button" id="hamburgerMenuIcon"/>
+          </a>
+        </div>
+        <div id="mobileMenuLinks">
+          <ul>
+            <li><a href="index.html" id="indexTopBorder">HOME</a></li>
+            <!-- id created so white line appears seperates
+              border across top of mobile view and the 'Home' link -->
+            <li><a href="PortfolioSpreadsheets.html">SPREADSHEETS</a></li>
+            <li><a href="PortfolioDatabases.html">DATABASES</a></li>
+            <li><a href="PortfolioWebCoding.html">WEB CODING</a></li>
+            <li><a href="PortfolioTutorials.html">TUTORIALS</a></li>
+            <li><a href="mailto:chrishotten@gmail.com">Email Me</a></li>
+            <li><a href="https://www.linkedin.com/in/christopher-hotten-ba44831a9">LinkedIn Profile</a></li>
+          </ul>
+        </div>
+      <nav>
+    </header>
+
+<!--=============== Tutorials Introduction ===================-->
+    <section>
+      <div class="container">
+      <!--  <div class="youTubeContainer">
+          <div id="youTubeVideo">
+            <iframe width="444" height="250"
+            src="https://www.youtube.com/embed/MkObqRUvpRY" frameborder="0" allowfullscreen>
+            </iframe>
+          </div>
+        </div> -->
+        <div id="tutorialsPageWelcomeImage">
+        <img src="Images/TutorialsPageWelcomeImage.jpg"
+          alt="Screenshot from tutorial video"/>
+        </div>
+        <div class="tutorialsSection">
+          <p id="tutorialsIntroductionText">
+            On this page you will find a full reference for all my YouTube tutorials.
+            This section will be regularly updated as new videos are created and uploaded.
+          </p>
+          <p>My YouTube channel can be found
+              <a href="https://www.youtube.com/channel/UCrTjBb8jy31tXihpLwltIVg">here</a>
+          </p>
+          <p id="tutorialsSectionDesktopOnlyText">
+            <!-- id created as this text only needs to appear in desktop view,
+              styled in Media Queries -->
+            <i>&#42;To open links in a new tab, hold
+            down the Ctrl key and click on the link&#42;</i>
+          </p>
+        </div>
+      </div>
+    </section>
+
+<!--== Multiple screenshots from tutorial videos for Spreadsheets ===========-->
+    <section class="tutorialScreenshotsSection">
+      <div class="container">
+        <div id="filmReelImagesDiv">
+          <img src="Images/TutorialScreenshotSpreadsheets1A.png"
+            alt="Screenshot from tutorial video"/>
+          <img src="Images/TutorialScreenshotSpreadsheets2A.png"
+            alt="Screenshot from tutorial video"/>
+          <img src="Images/TutorialScreenshotSpreadsheets3A.png"
+            alt="Screenshot from tutorial video" id="tutorialScreenshotHidden1"/>
+          <!-- makes an image none-visible to avoid page looked congested
+                on mobile/tablet view using CSS -->
+          <img src="Images/TutorialScreenshotSpreadsheets4A.png"
+            alt="Screenshot from tutorial video" id="tutorialScreenshotHidden2"/>
+          <img src="Images/TutorialScreenshotSpreadsheets5A.png"
+            alt="Screenshot from tutorial video" id="tutorialScreenshotHidden3"/>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="tutorialsSection">
+          <!-- All styling within tutorialsSection div is done
+            in 'Styling used across multiple pages' section of CSS -->
+          <h2>Spreadsheets</h2>
+          <img src="Images/ParagraphSpreadsheetsIcon2Circle.png"
+            alt="Microsoft Excel icon">
+          <table>
+            <tr class="tutorialsTableHeading">
+              <th class="tutorialsTableNumberColumn">No.</th>
+              <!-- th given class so can be hidden in mobile view,
+                styling only visible in Media Queries-->
+              <th>Description</th>
+              <th>Link</th>
+            </tr>
+            <tr>
+              <td class="tutorialsTableNumberColumn">1</td>
+              <!-- td given class so can be hidden in mobile view,
+                styling only visible in Media Queries-->
+              <td>Awaiting upload</td>
+              <td class="playArrow"><a href="#">
+                &#9654;</a></td>
+            </tr>
+            <tr>
+              <td class="tutorialsTableNumberColumn">2</td>
+              <td>Awaiting upload</td>
+              <td class="playArrow"><a href="#">
+                &#9654;</a></td>
+            </tr>
+            <tr>
+              <td class="tutorialsTableNumberColumn">3</td>
+              <td>Awaiting upload</td>
+              <td class="playArrow"><a href="#">
+                &#9654;</a></td>
+            </tr>
+            <tr>
+              <td class="tutorialsTableNumberColumn">4</td>
+              <td>Complete playlist</td>
+              <td class="playArrow"><a href="#">
+                &#9654;</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+<!--== Multiple screenshots from tutorial videos for Databases ===========-->
+    <section class="tutorialScreenshotsSection">
+      <div class="container">
+        <div id="filmReelImagesDiv">
+          <img src="Images/TutorialScreenshotDatabases1A.png"
+            alt="Screenshot from tutorial video">
+          <img src="Images/TutorialScreenshotDatabases2A.png"
+            alt="Screenshot from tutorial video">
+          <img src="Images/TutorialScreenshotDatabases3A.png"
+            alt="Screenshot from tutorial video" id="tutorialScreenshotHidden1"/>
+          <!-- makes an image visible to avoid page looked congested
+              on mobile/tablet view using CSS -->
+          <img src="Images/TutorialScreenshotDatabases4A.png"
+            alt="Screenshot from tutorial video" id="tutorialScreenshotHidden2"/>
+          <img src="Images/TutorialScreenshotDatabases5A.png"
+            alt="Screenshot from tutorial video" id="tutorialScreenshotHidden3"/>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="tutorialsSection">
+          <!-- All styling within tutorialsSection div is done
+            in 'Styling used across multiple pages' section of CSS -->
+          <h2>Databases</h2>
+          <img src="Images/ParagraphAccessIcon1Circle.png"
+            alt="Database icon"/>
+          <table>
+            <tr class="tutorialsTableHeading">
+              <th class="tutorialsTableNumberColumn">No.</th>
+              <!-- th given class so can be hidden in mobile view,
+                styling only visible in Media Queries-->
+              <th>Description</th>
+              <th>Link</th>
+            </tr>
+            <tr>
+              <td class="tutorialsTableNumberColumn">1</td>
+              <!-- td given class so can be hidden in mobile view,
+                styling only visible in Media Queries-->
+              <td>Awaiting upload</td>
+              <td class="playArrow"><a href="#">
+                &#9654;</a></td>
+            </tr>
+            <tr>
+              <td class="tutorialsTableNumberColumn">2</td>
+              <td>Awaiting upload</td>
+              <td class="playArrow"><a href="#">
+                &#9654;</a></td>
+            </tr>
+            <tr>
+              <td class="tutorialsTableNumberColumn">3</td>
+              <td>Awaiting upload</td>
+              <td class="playArrow"><a href="#">
+                &#9654;</a></td>
+            </tr>
+            <tr>
+              <td class="tutorialsTableNumberColumn">4</td>
+              <td>Complete playlist</td>
+              <td class="playArrow"><a href="#">
+                &#9654;</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+<!--== Multiple screenshots from tutorial videos for Web Coding ===========-->
+    <section class="tutorialScreenshotsSection">
+      <div class="container">
+        <div id="filmReelImagesDiv">
+          <img src="Images/TutorialScreenshotWebCoding1A.png"
+            alt="Screenshot from tutorial video">
+          <img src="Images/TutorialScreenshotWebCoding2A.png"
+            alt="Screenshot from tutorial video">
+          <img src="Images/TutorialScreenshotWebCoding3A.png"
+            alt="Screenshot from tutorial video" id="tutorialScreenshotHidden1"/>
+          <!-- makes an image visible to avoid page looked congested
+              on mobile/tablet view using CSS -->
+          <img src="Images/TutorialScreenshotWebCoding4A.png"
+            alt="Screenshot from tutorial video" id="tutorialScreenshotHidden2"/>
+          <img src="Images/TutorialScreenshotWebCoding5A.png"
+            alt="Screenshot from tutorial video" id="tutorialScreenshotHidden3"/>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="tutorialsSection">
+          <!-- All styling within tutorialsSection div is done
+            in 'Styling used across multiple pages' section of CSS -->
+          <h2>Web Coding</h2>
+          <img src="Images/ParagraphWebCodingIcon3Circle.png"
+            alt="Web Coding icon"/>
+
+          <table>
+            <tr class="tutorialsTableHeading">
+              <th class="tutorialsTableNumberColumn">No.</th>
+              <!-- th given class so can be hidden in mobile view,
+                styling only visible in Media Queries-->
+              <th>Description</th>
+              <th>Link</th>
+            </tr>
+            <tr>
+              <td class="tutorialsTableNumberColumn">1</td>
+              <!-- td given class so can be hidden in mobile view,
+                styling only visible in Media Queries-->
+              <td>Awaiting upload</td>
+              <td class="playArrow"><a href="#">
+                &#9654;</a></td>
+            </tr>
+            <tr>
+              <td class="tutorialsTableNumberColumn">2</td>
+              <td>Awaiting upload</td>
+              <td class="playArrow"><a href="#">
+                &#9654;</a></td>
+            </tr>
+            <tr>
+              <td class="tutorialsTableNumberColumn">3</td>
+              <td>Awaiting upload</td>
+              <td class="playArrow"><a href="#">
+                &#9654;</a></td>
+            </tr>
+            <tr>
+              <td class="tutorialsTableNumberColumn">4</td>
+              <td>Complete playlist</td>
+              <td class="playArrow"><a href="#">
+                &#9654;</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+<!--========================= Footer ======================================-->
+    <footer>
+      <div class="container">
+        <p>Email:</p>
+        <a href="mailto:chrishotten@gmail.com">chrishotten@gmail.com</a>
+
+        <!--****Site links***-->
+        <p class="footerTitles">Site Links:</p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="PortfolioSpreadsheets.html">Spreadsheets</a></li>
+          <li><a href="PortfolioDatabases.html">Databases</a></li>
+          <li><a href="PortfolioWebCoding.html">Web Coding</a></li>
+          <li><a href="PortfolioTutorials.html">Tutorials</a></li>
+          <li><a href="PortfolioSitemap.html">Site Map</a></li>
+        </ul>
+
+        <!--****Social/Video media links***-->
+        <p class="footerTitles">Media & Social:</p>
+        <a href="https://www.youtube.com/channel/UCrTjBb8jy31tXihpLwltIVg" target="blank">
+          <img src="Images/IconYouTubeWhite.png" alt="White YouTube icon"/>
+        </a>
+        <a href="https://www.linkedin.com/in/christopher-hotten-ba44831a9" target="blank">
+          <img src="Images/IconLinkedInWhite150X150.png" alt="White LinkedIn icon"/>
+        </a>
+        <br>
+        <p>Copyright &copy; Chris Hotten 2020</p>
+      </div>
+    </footer>
+
+<!--========javascript and  javascript sheet location==================-->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>

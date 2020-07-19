@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<!--=======Tells a browser to match the viewport width
+ to that of the device width====================================-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<!--==============Search engine result content=====================-->
+    <meta name="description" content="Chris Hotten portfolio">
+    <meta name="keywords" content="Spreadsheets, Excel, Databases, Access, Web,
+      Tutorials, Certificates, Introduction">
+    <meta name="author" content="Chris Hotten, Christopher Hotten">
+    <title>Chris Hotten | Welcome</title>
+
+<!--=========================Stylesheet location==================-->
+    <link href="styles.css" rel="stylesheet" />
+
+<!--=========================Font-family source links==================-->
+  	<link href="https://fonts.googleapis.com/css?family=Poppins" rel='stylesheet'>
+  	<link href="https://fonts.googleapis.com/css?family=Cabin" rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Manrope" rel='stylesheet'>
+
+<!-- Javascript is at bottom of html -->
+  </head>
+
+<!--========== ****HTML BODY STARTS****** =========================-->
+  <body>
+    <header id="logoAndNav"><!--header has id for sticky in CSS-->
+      <div class="container">
+        <div id="logo">
+          <a href="index.html">
+            <img src="Images/CHLogoLetteringBlackSwishRed.png"
+              alt="Chris Hotten Logo"/>
+          </a>
+          <a href="mailto:chrishotten@gmail.com" class="rightOfLogo">
+            <img src="Images/IconEmail4RedCircle250X250.png" alt="Email symbol"/>
+          </a>
+          <a href="https://www.linkedin.com/in/christopher-hotten-ba44831a9" target="blank" class="rightOfLogo">
+            <img src="Images/IconLinkedin3RedBackgroundCircleA.png" alt="LinkedIn icon"/>
+          </a>
+        </div>
+      </div>
+      <nav id="navigationBar">
+        <div class="container">
+          <ul>
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li>|</li>
+            <li><a href="PortfolioSpreadsheets.html">SPREADSHEETS</a></li>
+            <li>|</li>
+            <li><a href="PortfolioDatabases.html">DATABASES</a></li>
+            <li>|</li>
+            <li><a href="PortfolioWebCoding.html">WEB CODING</a></li>
+            <li>|</li>
+            <li><a href="PortfolioTutorials.html">TUTORIALS</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- Sperate nav section for links for mobile/tablet screens -->
+    <!-- ensures no conflicts occur with larger size screen links -->
+    <!-- all styling for this nav is in CSS media queries -->
+      <nav id="mobileMenu">
+        <div id="mobileTabletBurgerMenu">
+          <a href="index.html">
+            <img src="Images/ChrisHottenLogo2WhiteNoSwish3.png"
+              alt="Chris Hotten Logo" id="mobileLogo"/>
+          </a>
+          <a href="#"> <!-- href left blank as used in javascript -->
+            <img src="Images/HamburgerMenuWhite.png"
+              alt="Mobile menu button" id="hamburgerMenuIcon"/>
+          </a>
+        </div>
+        <div id="mobileMenuLinks">
+          <ul>
+            <li><a href="index.html" id="indexTopBorder">HOME</a></li>
+            <!-- id created so white line appears seperates
+              border across top of mobile view and the 'Home' link -->
+            <li><a href="PortfolioSpreadsheets.html">SPREADSHEETS</a></li>
+            <li><a href="PortfolioDatabases.html">DATABASES</a></li>
+            <li><a href="PortfolioWebCoding.html">WEB CODING</a></li>
+            <li><a href="PortfolioTutorials.html">TUTORIALS</a></li>
+            <li><a href="mailto:chrishotten@gmail.com">Email Me</a></li>
+            <li><a href="https://www.linkedin.com/in/christopher-hotten-ba44831a9">LinkedIn Profile</a></li>
+          </ul>
+        </div>
+      <nav>
+    </header>
+
+<!--================Hero image, author photo and text=======================-->
+    <section id="hero">
+      <div class="container">
+        <img src="Images/AvatarPhotoHero.jpg"
+            alt="Chris Hotten Avatar"/>
+        <h1>Hi, I'm Chris</h1>
+        <h2>I like Databases, Spreadsheets and Code</h2>
+      </div>
+    </section>
+
+<!--================text below hero section=================================-->
+   <section id="aboutMeText">
+      <div class="container">
+        <p>
+          Welcome to my website, which acts as a portfolio for my talents and
+          interests. As someone who revels in spreadsheets, relishes
+          databases (yes, really!) and rather enjoys a bit of coding, you will
+          find examples of my work for each subject, along with details of functions covered
+          and the range of fields I am proficient in.
+        <br class="mobileParagraphBreaks"> <!-- seperates parapgraphs
+          only in mobile view, in 'Styling used across multiple pages'
+          section of CSS MEDIA QUERIES -->
+        <br class="mobileParagraphBreaks">
+          Please feel free to browse
+          around and take the opportunity to find out more about myself and
+          the education I have taken to reach this point.
+        <br>
+        <br>
+          In this site you will also find links to my YouTube channel, which
+          is updated with self-produced tutorials that concentrate heavily on
+          spreadsheets and databases, as I want to show I am multi-skilled
+          and can be relied upon to produce reports, update/maintain
+          data and find solutions to problems.
+        <br class="mobileParagraphBreaks">
+        <br class="mobileParagraphBreaks">
+          As a practical example
+          of some of my know-how, the site you are using right now has been
+          entirely coded by myself to look good and function correctly whether
+          you are viewing this on a computer, tablet or mobile (this is commonly
+          referred to as 'responsive web' design)
+        </p>
+        <br>
+        <hr class="sectionLineBreaks"> <!--large line running across the length
+          of the container, styled near top CSS sheet in multiple pages section-->
+     </div>
+   </section>
+
+<!--==========Links to pages for the different subjects with pictures=======-->
+  <section id="subjectLinks">
+      <div class="container">
+        <!--picture and text below put in same div for easier control-->
+       <div class="boxForPictureAndText">
+          <a href="PortfolioSpreadsheets.html">
+            <img src="Images/SubjectPictureSpreadsheets2.jpg"
+              alt="Picture of Microsoft Excel logo"/>
+            <h3>SPREADSHEETS</h3>
+          </a>
+        </div>
+        <div class="boxForPictureAndText">
+          <a href="PortfolioDatabases.html">
+            <img src="Images/SubjectPictureDatabases2.jpg"
+              alt="Picture of Database icon"/>
+            <h3>DATABASES</h3>
+          </a>
+        </div>
+        <div class="boxForPictureAndText">
+          <a href="PortfolioWebCoding.html">
+            <img src="Images/SubjectPictureWebCoding.png"
+              alt="Picture showing www."/>
+            <h3>WEB CODING</h3>
+          </a>
+        </div>
+        <div class="boxForPictureAndText">
+          <a href="PortfolioTutorials.html">
+            <img src="Images/SubjectPictureTutorials.jpg"
+              alt="Picture of YouTube play button"/>
+            <h3>TUTORIALS</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+<!--==========Visible line break appearing below subject pictures=======-->
+    <div class="container">
+      <hr class="sectionLineBreaks"> <!--large line running across the length
+        of the container, styled near top CSS sheet in multiple pages section-->
+    </div>
+
+<!--==========Small pictures of badges and logos of certifications=======-->
+<!-- ** Different divs created for badges and Certificates
+  as will require different widths in media queries ** -->
+    <section id="certificates">
+      <div class="container">
+        <h4>Certifications & Experience</h4>
+        <div>
+          <div class="boxForBadge">
+            <img src="Images/BadgeOneAwards2.png"
+              alt="Picture of One Awards badge"/>
+          </div>
+          <div class="boxForBadge">
+            <img src="Images/BadgeNewcastleCollege2.png"
+              alt="Picture of Newcastle College badge"/>
+          </div>
+          <div class="boxForBadge">
+            <img src="Images/BadgeHTML5.png"
+              alt="Picture of HTML version 5 badge"/>
+          </div>
+          <div class="boxForBadge">
+            <img src="Images/BadgeCSS3.png"
+              alt="Picture of CSS version 3 badge"/>
+          </div>
+          <div class="boxForBadge">
+            <img src="Images/BadgeJavascript.png"
+              alt="Picture of Javascript badge"/>
+          </div>
+          <div class="boxForBadge">
+            <img src="Images/BadgeW3Schools.png"
+              alt="Picture of W3 schools badge"/>
+          </div>
+          <div class="boxForBadge">
+            <img src="Images/BadgeCodeCamp.jpg"
+              alt="Picture of Free Code Camp badge"/>
+          </div>
+          <div class="boxForBadge">
+            <img src="Images/BadgeSAP2Cropped.png"
+              alt="Picture of S.A.P badge"/>
+          </div>
+        </div>
+
+<!-- == Scans of certificates with text immediately below == -->
+        <div>
+          <div class="boxforCertificates">
+            <img src="Images/CertificateHEDiploma.jpg" alt="Scan of One Awards Diploma Certificate">
+            <h6>One Awards Diploma IT & Computing (Distinction)</h6>
+          </div>
+      <!--    <div class="boxforCertificates">
+            <img src="Images/CertificateCollege.jpg" alt="Scan of Newcastle College Certificate">
+            <h6>Newcastle College Diploma: Computing</h6> -->
+          </div>
+          <div class="boxforCertificates">
+            <img src="Images/CertificateOCRLevel2CLAITPlusAccess.jpg" alt="Scan of Level 2 Database Certificate">
+            <h6>OCR Level 2 CLAIT Plus Databases</h6>
+          </div>
+          <div class="boxforCertificates">
+            <img src="Images/CertificateOCRLevel2CLAiTPlusExcel.jpg" alt="Scan of Level 2 Spreadsheets Certificate">
+            <h6>OCR Level 2 CLAIT Plus Spreadsheets</h6>
+          </div>
+          <div class="boxforCertificates">
+            <img src="Images/CertificateOCRLevel2CLAiTPlusWord.jpg" alt="Scan of Level 2 MS Word Certificate">
+            <h6>OCR Level 2 CLAIT Plus MS Word</h6>
+          </div>
+          <div class="boxforCertificates">
+            <img src="Images/CertificateNCFETeamLeading.jpg" alt="Scan of Level 2 Team Leading Certificate">
+            <h6>NCFE Level 2 Certificate Team Leading</h6>
+          </div>
+        <!--  <div class="boxforCertificates">
+            <img src="Images/PlaceholderImageCertificateA4.jpg" alt="Scan of npower intermediate MS Access Certificate">
+            <h6>npower Certificate MS Access Intermediate</h6>
+          </div>
+          <div class="boxforCertificates">
+            <img src="Images/PlaceholderImageCertificateA4.jpg" alt="Scan of npower intermediate MS Excel Certificate">
+            <h6>npower Certificate MS Excel Intermediate</h6>
+          </div>
+          <div class="boxforCertificates">
+            <img src="Images/PlaceholderImageCertificateA4.jpg" alt="Scan of npower advanced MS Access Certificate">
+            <h6>npower Certificate MS Access Advanced</h6>
+          </div>
+          <div class="boxforCertificates">
+            <img src="Images/PlaceholderImageCertificateA4.jpg" alt="Scan of npower advanced MS Excel Certificate">
+            <h6>npower Certificate MS Excel Intermediate</h6> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--========================= Footer ======================================-->
+    <footer>
+      <div class="container">
+
+        <p>Email:</p>
+        <a href="mailto:chrishotten@gmail.com">chrishotten@gmail.com</a>
+
+        <!--****Site links***-->
+        <p class="footerTitles">Site Links:</p>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="PortfolioSpreadsheets.html">Spreadsheets</a></li>
+          <li><a href="PortfolioDatabases.html">Databases</a></li>
+          <li><a href="PortfolioWebCoding.html">Web Coding</a></li>
+          <li><a href="PortfolioTutorials.html">Tutorials</a></li>
+          <li><a href="PortfolioSitemap.html">Site Map</a></li>
+        </ul>
+
+        <!--****Social/Video media links***-->
+        <p class="footerTitles">Media & Social:</p>
+        <a href="https://www.youtube.com/channel/UCrTjBb8jy31tXihpLwltIVg" target="blank">
+          <img src="Images/IconYouTubeWhite.png" alt="White YouTube icon"/>
+        </a>
+        <a href="https://www.linkedin.com/in/christopher-hotten-ba44831a9" target="blank">
+          <img src="Images/IconLinkedInWhite150X150.png" alt="White LinkedIn icon"/>
+        </a>
+        <br>
+        <p>Copyright &copy; Chris Hotten 2020</p>
+      </div>
+    </footer>
+
+<!--========javascript and  javascript sheet location==================-->
+      <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="javascript.js"></script>
+  </body>
+</html>
