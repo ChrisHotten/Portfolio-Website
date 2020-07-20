@@ -630,7 +630,7 @@ in Spreadsheets, Databases and Web Coding pages------------ */
 .boxForBadge img
 {
   height: 70px;
-  padding: none;
+  padding: 0;
 }
 
 .boxforCertificates
@@ -656,7 +656,7 @@ in Spreadsheets, Databases and Web Coding pages------------ */
   border-style: solid;
   border-color: #ae3a3a;
   height: 170px;
-  padding: none;
+  padding: 0;
 }
 
 /* =============== SPREADSHEETS page =================================== */
